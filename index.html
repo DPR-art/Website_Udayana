@@ -1,180 +1,401 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Environmental Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-white">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white">
     <!-- Header Section -->
     <header class="bg-white shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-leaf text-green-500 text-2xl"></i>
-                <span class="text-xl font-semibold text-gray-800">EcoSite</span>
-            </div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-600 hover:text-green-500">Beranda</a>
-                <a href="#" class="text-gray-600 hover:text-green-500">Tentang</a>
-                <a href="#" class="text-gray-600 hover:text-green-500">Artikel</a>
-                <a href="#" class="text-gray-600 hover:text-green-500">Kontak</a>
-            </nav>
-            <button class="md:hidden">
-                <i class="fas fa-bars text-gray-600"></i>
-            </button>
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-leaf text-green-500 text-2xl"></i>
+          <span class="text-xl font-semibold text-gray-800">EcoSite</span>
         </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-600 hover:text-green-500">Beranda</a>
+          <a href="#" class="text-gray-600 hover:text-green-500">Tentang</a>
+          <a href="#" class="text-gray-600 hover:text-green-500">Artikel</a>
+          <a href="#" class="text-gray-600 hover:text-green-500">Kontak</a>
+        </nav>
+        <button class="md:hidden">
+          <i class="fas fa-bars text-gray-600"></i>
+        </button>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-blue-50 py-16">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-8 lg:mb-0">
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                        ABC Car Emisi Karbon Karena Kendaraan
-                    </h1>
-                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                        Kendaraan bermotor merupakan salah satu penyumbang terbesar emisi karbon di dunia. 
-                        Mari kita pelajari dampaknya terhadap lingkungan dan solusi yang dapat kita lakukan 
-                        untuk mengurangi jejak karbon kita.
-                    </p>
-                    <button class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition duration-300">
-                        Pelajari Lebih Lanjut
-                    </button>
-                </div>
-                <div class="lg:w-1/2 flex justify-center">
-                    <div class="relative">
-                        <div class="w-80 h-80 bg-blue-100 rounded-full flex items-center justify-center">
-                            <i class="fas fa-car text-6xl text-blue-500"></i>
-                        </div>
-                        <div class="absolute top-4 right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
-                            <i class="fas fa-exclamation text-white text-xl"></i>
-                        </div>
-                    </div>
-                </div>
+    <section class="bg-blue-100 py-16">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-8 lg:mb-0">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+              ABC Car Emisi Karbon Karena Kendaraan
+            </h1>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+              Kendaraan bermotor merupakan salah satu penyumbang terbesar emisi
+              karbon di dunia. Mari kita pelajari dampaknya terhadap lingkungan
+              dan solusi yang dapat kita lakukan untuk mengurangi jejak karbon
+              kita.
+            </p>
+            <button
+              class="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition duration-300"
+            >
+              Pelajari Lebih Lanjut
+            </button>
+          </div>
+          <div class="lg:w-1/2 flex justify-center">
+            <div class="relative">
+              <div
+                class="w-80 h-80 bg-blue-100 rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-car text-6xl text-blue-500"></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-exclamation text-white text-xl"></i>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Green Cards Section -->
     <section class="pt-16 mx-auto">
-        <div class="relative">
-            <div class="w-[95%] relative z-10 mx-auto">
-                <div class="container mx-auto px-12 bg-white gap-6 flex">
-                    <div class=" flex justify-center w-1/2 h-[40vw] rounded-lg bg-green-100">
-                        <h1 class="text-[40px] pt-24 w-[60%]">Namun,<span class="font-semibold"> Mengapa Polusi Udara Indonesia Sangat Tinggi?</span></h1>
-                    </div>
-                    <div class="w-1/2 h-[40vw] flex flex-col justify-between gap-6">
-                        <div class="w-full h-[70%] gap-6 flex">
-                            <div class="w-1/2 rounded-lg flex items-center bg-red-100">
-                                <div class="flex flex-col pl-8 w-[80%]">
-                                    <p class="text-[20px]">Penyebab utama polusi udara yaitu</p>
-                                    <p class="text-[75px] font-bold leading-none">EMISI GAS</p>
-                                    <p class="text-[20px]">dari sektor <span class="font-semibold">transportasi</span></p>
-                                </div>
-                            </div>
-                            <div class="w-1/2 rounded-lg bg-red-200"></div>
-                        </div>
-                        <div class="w-full h-[25%] rounded-lg flex bg-red-400"></div>
-                    </div>
-                </div>
-                <div class="absolute z-8 w-full">
-                    <div class="container mx-auto flex flex-col items-center relative pt-16 pb-32 px-12 bg-white rounded-b-lg">
-                        <div class="flex w-full items-center h-32">
-                            <div class="w-1/2 h-full text-left text-[40px]"><h1 class="w-1/2 font-bold">DAMPAK POLUSI UDARA</h1></div>
-                            <div class="w-1/2 text-right flex justify-end">
-                                <p class="text-lg">Jika tidak ditindak lanjuti, maka akan berbahaya bagi kita
-                                masyarakat dan membuat lingkungan tidak nyaman di huni.</p>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-3 absolute w-full px-12 -bottom-32 gap-6">
-                            <div class="bg-white p-6 rounded-lg shadow-xl text-center">
-                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <i class="fas fa-car text-blue-500 text-xl"></i>
-                                </div>
-                                <h4 class="text-lg font-semibold text-gray-800 mb-2">Transportasi Darat</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Kendaraan darat menyumbang 75% dari total emisi transportasi global.
-                                </p>
-                            </div>
-                            <div class="bg-white p-6 rounded-lg shadow-xl text-center">
-                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <i class="fas fa-bicycle text-green-500 text-xl"></i>
-                                </div>
-                                <h4 class="text-lg font-semibold text-gray-800 mb-2">Transportasi Hijau</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Menggunakan sepeda dapat mengurangi emisi hingga 2.3 ton CO2 per tahun.
-                                </p>
-                            </div>
-                            <div class="bg-white p-6 rounded-lg shadow-xl text-center">
-                                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <i class="fas fa-bolt text-orange-500 text-xl"></i>
-                                </div>
-                                <h4 class="text-lg font-semibold text-gray-800 mb-2">Kendaraan Listrik</h4>
-                                <p class="text-gray-600 text-sm">
-                                    Mobil listrik dapat mengurangi emisi hingga 60% dibanding mobil konvensional.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="relative">
+        <div class="relative bg-red-400 z-10 mx-auto">
+          <div class="container mx-auto px-12 bg-white gap-6 flex">
+            <div
+              class="flex justify-center w-1/2 h-[40vw] rounded-lg bg-green-100"
+            >
+              <h1 class="text-[40px] pt-24 w-[60%]">
+                Namun,<span class="font-semibold">
+                  Mengapa Polusi Udara Indonesia Sangat Tinggi?</span
+                >
+              </h1>
             </div>
-            <div class="relative w-full h-[100vh] bg-red-200 -translate-y-8"><img class="absolute w-full" src="./image/Conseils d’un arbre 1.png" alt=""></div>
+            <div class="w-1/2 h-[40vw] flex flex-col justify-between gap-6">
+              <div class="w-full h-[70%] gap-6 flex">
+                <div class="w-1/2 rounded-lg flex items-center bg-red-100">
+                  <div class="flex flex-col pl-8 w-[80%]">
+                    <p class="text-[20px]">Penyebab utama polusi udara yaitu</p>
+                    <p class="text-[75px] font-bold leading-none">EMISI GAS</p>
+                    <p class="text-[20px]">
+                      dari sektor
+                      <span class="font-semibold">transportasi</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="w-1/2 rounded-lg bg-red-200"></div>
+              </div>
+              <div class="w-full h-[25%] rounded-lg flex bg-red-400"></div>
+            </div>
+          </div>
+          <div class="absolute z-8 w-full">
+            <div
+              class="container mx-auto flex flex-col items-center relative pt-16 pb-32 px-12 bg-white rounded-b-lg"
+            >
+              <div class="flex w-full items-center h-32">
+                <div class="w-1/2 h-full text-left text-[40px]">
+                  <h1 class="w-1/2 font-bold">DAMPAK POLUSI UDARA</h1>
+                </div>
+                <div class="w-1/2 text-right flex justify-end">
+                  <p class="text-lg">
+                    Jika tidak ditindak lanjuti, maka akan berbahaya bagi kita
+                    masyarakat dan membuat lingkungan tidak nyaman di huni.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="grid md:grid-cols-3 absolute w-full px-12 -bottom-32 gap-6"
+              >
+                <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+                  <div
+                    class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="fas fa-car text-blue-500 text-xl"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Transportasi Darat
+                  </h4>
+                  <p class="text-gray-600 text-sm">
+                    Kendaraan darat menyumbang 75% dari total emisi transportasi
+                    global.
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+                  <div
+                    class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="fas fa-bicycle text-green-500 text-xl"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Transportasi Hijau
+                  </h4>
+                  <p class="text-gray-600 text-sm">
+                    Menggunakan sepeda dapat mengurangi emisi hingga 2.3 ton CO2
+                    per tahun.
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+                  <div
+                    class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="fas fa-bolt text-orange-500 text-xl"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Kendaraan Listrik
+                  </h4>
+                  <p class="text-gray-600 text-sm">
+                    Mobil listrik dapat mengurangi emisi hingga 60% dibanding
+                    mobil konvensional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="relative w-full h-[100vh] bg-red-200 -translate-y-8">
+          <img
+            class="absolute w-full"
+            src="./image/Conseils d’un arbre 1.png"
+            alt=""
+          />
+        </div>
+      </div>
     </section>
 
     <!-- Statistics Section -->
     <section class="py-16">
-        <div class="container flex justify-around mx-auto flex px-4">
-            <div class="w-[40%]"><img class="" src="./image/Rectangle 54.png" alt=""></div>
-            <div class="w-[55%] flex flex-col gap-4">
-                <div class="flex flex-col gap-4">
-                    <h1 class="font-semibold text-[24px]">5 Dampak Baik Mengurangi Emisi Karbon Kamu
-                        untuk Dunia yang Lebih Baik</h1>
-                    <p class="text-[15px]">Mengurangi emisi karbon memberikan dampak positif bagi dunia, mulai dari udara yang lebih bersih dan sehat, iklim yang lebih stabil, hingga alam yang lebih terlindungi dari kerusakan. Selain itu, gaya hidup rendah karbon juga mendorong pola hidup yang lebih sehat, seperti konsumsi makanan nabati dan penggunaan transportasi ramah lingkungan.</p>
+      <div class="container flex justify-around mx-auto px-8">
+        <div class="w-[40%]">
+          <img class="" src="./image/Rectangle 54.png" alt="" />
+        </div>
+        <div class="w-[55%] flex flex-col gap-4">
+          <div class="flex flex-col gap-4">
+            <h1 class="font-semibold text-[24px]">
+              5 Dampak Baik Mengurangi Emisi Karbon Kamu untuk Dunia yang Lebih
+              Baik
+            </h1>
+            <p class="text-[15px]">
+              Mengurangi emisi karbon memberikan dampak positif bagi dunia,
+              mulai dari udara yang lebih bersih dan sehat, iklim yang lebih
+              stabil, hingga alam yang lebih terlindungi dari kerusakan. Selain
+              itu, gaya hidup rendah karbon juga mendorong pola hidup yang lebih
+              sehat, seperti konsumsi makanan nabati dan penggunaan transportasi
+              ramah lingkungan.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div
+              class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]"
+            >
+              <div class="flex justify-between items-center">
+                <h1 class="font-semibold text-[24px]">Pemanasan Global</h1>
+                <img
+                  src="./image/ep_arrow-down-bold.png"
+                  class="h-[24px] toggle-btn transition-transform duration-300"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                Konsentrasi gas karbondioksida yang tinggi menyebabkan panas
+                terperangkap di atmosfer karena menyerap radiasi matahari dari
+                permukaan bumi. Akibatnya, suhu bumi meningkat dan udara terasa
+                makin panas dari tahun ke tahun. Mengurangi emisi dari aktivitas
+                kita adalah langkah nyata untuk mencegah pemanasan global.
+              </p>
+            </div>
+            <div
+              class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]"
+            >
+              <div class="flex justify-between items-center">
+                <h1 class="font-semibold text-[24px]">Bencana Alam</h1>
+                <img
+                  src="./image/ep_arrow-down-bold.png"
+                  class="h-[24px] toggle-btn transition-transform duration-300"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                Bencana hidrometeorologi seperti banjir, longsor, kekeringan,
+                dan angin topan semakin sering terjadi akibat pemanasan global.
+                Fenomena ini dipicu oleh gangguan pada atmosfer bumi akibat
+                emisi gas rumah kaca seperti karbon dioksida. Jika tidak
+                dikendalikan, intensitas dan frekuensi bencana akan terus
+                meningkat di masa depan.
+              </p>
+            </div>
+            <div
+              class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]"
+            >
+              <div class="flex justify-between items-center">
+                <h1 class="font-semibold text-[24px]">Ketersediaan Air</h1>
+                <img
+                  src="./image/ep_arrow-down-bold.png"
+                  class="h-[24px] toggle-btn transition-transform duration-300"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                Emisi gas karbon dari aktivitas manusia memicu pemanasan global
+                dan perubahan iklim, seperti kekeringan panjang atau hujan
+                ekstrem yang menyebabkan banjir dan longsor. Jika terus
+                dibiarkan, ketersediaan air bersih bisa terganggu. Dengan
+                mengurangi emisi, kita turut menjaga ketahanan air bersih untuk
+                masa depan.
+              </p>
+            </div>
+            <div
+              class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]"
+            >
+              <div class="flex justify-between items-center">
+                <h1 class="font-semibold text-[24px]">Isu Kesehatan</h1>
+                <img
+                  src="./image/ep_arrow-down-bold.png"
+                  class="h-[24px] toggle-btn transition-transform duration-300"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                Konsentrasi gas karbondioksida yang tinggi menyebabkan panas
+                terperangkap di atmosfer karena menyerap radiasi matahari dari
+                permukaan bumi. Akibatnya, suhu bumi meningkat dan udara terasa
+                makin panas dari tahun ke tahun. Mengurangi emisi dari aktivitas
+                kita adalah langkah nyata untuk mencegah pemanasan global.
+              </p>
+            </div>
+            <div
+              class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]"
+            >
+              <div class="flex justify-between items-center">
+                <h1 class="font-semibold text-[24px]">
+                  Warisan Positif untuk Generasi Mendatang
+                </h1>
+                <img
+                  src="./image/ep_arrow-down-bold.png"
+                  class="h-[24px] toggle-btn transition-transform duration-300"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                Langkah-langkah kecil yang kamu lakukan hari ini, seperti
+                mengurangi penggunaan kendaraan pribadi atau beralih ke energi
+                terbarukan, adalah investasi untuk bumi yang lebih lestari bagi
+                anak cucu kita.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Articles -->
+    <section class="py-16">
+        <div class="container mx-auto px-12">
+            <h2 class="text-3xl font-semibold mb-6">Popular Articles</h2>
+            <div class="flex flex-col md:flex-row w-full gap-8">
+                <!-- Main Article -->
+                <div class="flex flex-col w-1/2">
+                <img
+                    src="./image/image(2).png"
+                    alt="Main"
+                    class="rounded-lg mb-4 w-full object-cover"
+                />
+                <p class="text-sm text-gray-500 mb-1">Selasa, 26 November 2025</p>
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">
+                    Butuh Dukungan Kolektif Turunkan Emisi Karbon
+                </h3>
+                <p class="text-lg text-gray-700">
+                    Indonesia telah berhasil menurunkan emisi karbon bahan bakar fosil
+                    menjadi 733,2 juta ton pada 2023.
+                </p>
                 </div>
-                <div class="flex flex-col gap-4">
-                    <div class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]">
-                        <div class="flex justify-between items-center">
-                            <h1 class="font-semibold text-[24px]">Pemanasan Global</h1>
-                            <img src="./image/ep_arrow-down-bold.png" class="h-[24px] toggle-btn transition-transform duration-300" alt="">
-                        </div>
-                        <p class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">Konsentrasi gas karbondioksida yang tinggi menyebabkan panas terperangkap di atmosfer karena menyerap radiasi matahari dari permukaan bumi. Akibatnya, suhu bumi meningkat dan udara terasa makin panas dari tahun ke tahun. Mengurangi emisi dari aktivitas kita adalah langkah nyata untuk mencegah pemanasan global.</p>
+
+                <!-- Side Articles -->
+                <div class="flex flex-col gap-6 w-1/2">
+                <!-- Article 1 -->
+                <div class="flex gap-3 w-full h-1/3">
+                    <img
+                    src="./image/image(3).png"
+                    class="rounded-md w-40 h-full object-cover"
+                    alt="Thumb"
+                    />
+                    <div>
+                    <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+                    <h4 class="text-xl font-semibold leading-snug">
+                        Isu Emisi Karbon Tenggelam
+                    </h4>
+                    <p class="text-lg text-gray-600 line-clamp-2">
+                        Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                        the...
+                    </p>
                     </div>
-                    <div class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]">
-                        <div class="flex justify-between items-center">
-                            <h1 class="font-semibold text-[24px]">Bencana Alam</h1>
-                            <img src="./image/ep_arrow-down-bold.png" class="h-[24px] toggle-btn transition-transform duration-300" alt="">
-                        </div>
-                        <p class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">Bencana hidrometeorologi seperti banjir, longsor, kekeringan, dan angin topan semakin sering terjadi akibat pemanasan global. Fenomena ini dipicu oleh gangguan pada atmosfer bumi akibat emisi gas rumah kaca seperti karbon dioksida. Jika tidak dikendalikan, intensitas dan frekuensi bencana akan terus meningkat di masa depan.</p>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex gap-3 h-1/3">
+                    <img
+                    src="./image/image(4).png"
+                    class="rounded-md w-40 h-full object-cover"
+                    alt="Thumb"
+                    />
+                    <div>
+                    <p class="text-xs text-gray-500">Kamis, 10 April 2025</p>
+                    <h4 class="text-xl font-semibold leading-snug">
+                        Pentingnya Dekarbonisasi Angkutan Barang
+                    </h4>
+                    <p class="text-lg text-gray-600 line-clamp-2">
+                        Upaya pengurangan emisi karbon dapat dimulai dari angkutan
+                        logistik. Peran...
+                    </p>
                     </div>
-                    <div class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]">
-                        <div class="flex justify-between items-center">
-                            <h1 class="font-semibold text-[24px]">Ketersediaan Air</h1>
-                            <img src="./image/ep_arrow-down-bold.png" class="h-[24px] toggle-btn transition-transform duration-300" alt="">
-                        </div>
-                        <p class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">Emisi gas karbon dari aktivitas manusia memicu pemanasan global dan perubahan iklim, seperti kekeringan panjang atau hujan ekstrem yang menyebabkan banjir dan longsor. Jika terus dibiarkan, ketersediaan air bersih bisa terganggu. Dengan mengurangi emisi, kita turut menjaga ketahanan air bersih untuk masa depan.</p>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex gap-3 h-1/3">
+                    <img
+                    src="./image/image(5).png"
+                    class="rounded-md w-40 h-full object-cover"
+                    alt="Thumb"
+                    />
+                    <div>
+                    <p class="text-xs text-gray-500">Kamis, 5 Juni 2024</p>
+                    <h4 class="text-xl font-semibold leading-snug">
+                        RI dan Inggris perkuat kolaborasi transportasi rendah emisi
+                    </h4>
+                    <p class="text-lg text-gray-600 line-clamp-2">
+                        Kementerian Perhubungan Republik...
+                    </p>
                     </div>
-                    <div class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]">
-                        <div class="flex justify-between items-center">
-                            <h1 class="font-semibold text-[24px]">Isu Kesehatan</h1>
-                            <img src="./image/ep_arrow-down-bold.png" class="h-[24px] toggle-btn transition-transform duration-300" alt="">
-                        </div>
-                        <p class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">Konsentrasi gas karbondioksida yang tinggi menyebabkan panas terperangkap di atmosfer karena menyerap radiasi matahari dari permukaan bumi. Akibatnya, suhu bumi meningkat dan udara terasa makin panas dari tahun ke tahun. Mengurangi emisi dari aktivitas kita adalah langkah nyata untuk mencegah pemanasan global.</p>
-                    </div>
-                    <div class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-8 rounded-[20px]">
-                        <div class="flex justify-between items-center">
-                            <h1 class="font-semibold text-[24px]">Warisan Positif untuk Generasi Mendatang</h1>
-                            <img src="./image/ep_arrow-down-bold.png" class="h-[24px] toggle-btn transition-transform duration-300" alt="">
-                        </div>
-                        <p class="text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">Langkah-langkah kecil yang kamu lakukan hari ini, seperti mengurangi penggunaan kendaraan pribadi atau beralih ke energi terbarukan, adalah investasi untuk bumi yang lebih lestari bagi anak cucu kita.</p>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -182,173 +403,240 @@
 
     <!-- Earth Protection Section -->
     <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-8 lg:mb-0">
-                    <div class="relative w-80 h-80 mx-auto">
-                        <div class="absolute inset-0 bg-gradient-to-br from-orange-300 to-orange-500 rounded-full"></div>
-                        <div class="absolute inset-4 bg-gradient-to-br from-blue-400 to-green-400 rounded-full flex items-center justify-center">
-                            <i class="fas fa-globe text-6xl text-white"></i>
-                        </div>
-                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
-                            <i class="fas fa-shield-alt text-white text-xl"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6">
-                        Lindungi Bumi dari Emisi Kendaraan
-                    </h2>
-                    <p class="text-gray-600 mb-6">
-                        Sektor transportasi menyumbang sekitar 24% dari emisi CO2 global. 
-                        Dengan mengambil langkah-langkah sederhana, kita dapat berkontribusi 
-                        dalam mengurangi dampak negatif terhadap lingkungan.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="text-gray-700">Gunakan transportasi umum</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="text-gray-700">Pilih kendaraan ramah lingkungan</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="text-gray-700">Lakukan carpooling atau bike sharing</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                            <span class="text-gray-700">Rawat kendaraan secara berkala</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-8 lg:mb-0">
+            <div class="relative w-80 h-80 mx-auto">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-300 to-orange-500 rounded-full"
+              ></div>
+              <div
+                class="absolute inset-4 bg-gradient-to-br from-blue-400 to-green-400 rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-globe text-6xl text-white"></i>
+              </div>
+              <div
+                class="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-shield-alt text-white text-xl"></i>
+              </div>
             </div>
+          </div>
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              Lindungi Bumi dari Emisi Kendaraan
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Sektor transportasi menyumbang sekitar 24% dari emisi CO2 global.
+              Dengan mengambil langkah-langkah sederhana, kita dapat
+              berkontribusi dalam mengurangi dampak negatif terhadap lingkungan.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                <span class="text-gray-700">Gunakan transportasi umum</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                <span class="text-gray-700"
+                  >Pilih kendaraan ramah lingkungan</span
+                >
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                <span class="text-gray-700"
+                  >Lakukan carpooling atau bike sharing</span
+                >
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                <span class="text-gray-700"
+                  >Rawat kendaraan secara berkala</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Popular Articles Section -->
     <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Popular Articles</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <article class="bg-white rounded-lg shadow-sm overflow-hidden">
-                    <div class="h-40 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                        <i class="fas fa-users text-white text-3xl"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">Tips Buat Ngatur Waktu Buat Semua</h3>
-                        <p class="text-gray-600 text-sm">Pelajari strategi efektif untuk mengatur waktu dalam kehidupan sehari-hari.</p>
-                    </div>
-                </article>
-                
-                <article class="bg-white rounded-lg shadow-sm overflow-hidden">
-                    <div class="h-40 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
-                        <i class="fas fa-leaf text-white text-3xl"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">Pentingnya Lingkungan untuk Kehidupan</h3>
-                        <p class="text-gray-600 text-sm">Memahami peran penting lingkungan dalam kelangsungan hidup manusia.</p>
-                    </div>
-                </article>
-                
-                <article class="bg-white rounded-lg shadow-sm overflow-hidden">
-                    <div class="h-40 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                        <i class="fas fa-graduation-cap text-white text-3xl"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">Budaya Membaca Jarapan Indonesia</h3>
-                        <p class="text-gray-600 text-sm">Analisis tentang kebiasaan membaca masyarakat Indonesia di era digital.</p>
-                    </div>
-                </article>
-                
-                <article class="bg-white rounded-lg shadow-sm overflow-hidden">
-                    <div class="h-40 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                        <i class="fas fa-lightbulb text-white text-3xl"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-gray-800 mb-2">5 Tips Yang dipakan Mahasiswa</h3>
-                        <p class="text-gray-600 text-sm">Tips praktis untuk mahasiswa dalam menghadapi perkuliahan dan kehidupan kampus.</p>
-                    </div>
-                </article>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Popular Articles</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div
+              class="h-40 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center"
+            >
+              <i class="fas fa-users text-white text-3xl"></i>
             </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-800 mb-2">
+                Tips Buat Ngatur Waktu Buat Semua
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Pelajari strategi efektif untuk mengatur waktu dalam kehidupan
+                sehari-hari.
+              </p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div
+              class="h-40 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center"
+            >
+              <i class="fas fa-leaf text-white text-3xl"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-800 mb-2">
+                Pentingnya Lingkungan untuk Kehidupan
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Memahami peran penting lingkungan dalam kelangsungan hidup
+                manusia.
+              </p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div
+              class="h-40 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center"
+            >
+              <i class="fas fa-graduation-cap text-white text-3xl"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-800 mb-2">
+                Budaya Membaca Jarapan Indonesia
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Analisis tentang kebiasaan membaca masyarakat Indonesia di era
+                digital.
+              </p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div
+              class="h-40 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center"
+            >
+              <i class="fas fa-lightbulb text-white text-3xl"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-800 mb-2">
+                5 Tips Yang dipakan Mahasiswa
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Tips praktis untuk mahasiswa dalam menghadapi perkuliahan dan
+                kehidupan kampus.
+              </p>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-leaf text-green-500 text-xl"></i>
-                        <span class="text-lg font-semibold">EcoSite</span>
-                    </div>
-                    <p class="text-gray-400 text-sm">
-                        Platform edukasi lingkungan untuk masa depan yang lebih hijau dan berkelanjutan.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Navigasi</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Artikel</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Kontak</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Kategori</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Transportasi</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Energi Terbarukan</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Konservasi</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Tips Hijau</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Ikuti Kami</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-facebook text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-youtube text-xl"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fas fa-leaf text-green-500 text-xl"></i>
+              <span class="text-lg font-semibold">EcoSite</span>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-400 text-sm">
-                    © 2025 EcoSite. Semua hak dilindungi.
-                </p>
+            <p class="text-gray-400 text-sm">
+              Platform edukasi lingkungan untuk masa depan yang lebih hijau dan
+              berkelanjutan.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Navigasi</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Beranda</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Artikel</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Kategori</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Transportasi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Energi Terbarukan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Konservasi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Tips Hijau</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Ikuti Kami</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
             </div>
+          </div>
         </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p class="text-gray-400 text-sm">
+            © 2025 EcoSite. Semua hak dilindungi.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="toggle.js"></script>
 
     <script>
-        // Simple scroll animation
-        window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('section');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('opacity-100');
-                } else {
-                    element.classList.add('opacity-90');
-                }
-            });
+      // Simple scroll animation
+      window.addEventListener("scroll", () => {
+        const elements = document.querySelectorAll("section");
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add("opacity-100");
+          } else {
+            element.classList.add("opacity-90");
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>
