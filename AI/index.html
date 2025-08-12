@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <section class="chat-window">
+        <div class="header">
+            <a href="./../index.html"><img src="./../Icon/Vector.png" alt=""><p>Kembali</p></a>
+        </div>
+        <div class="title">
+            <img src="./../image/AI/Logo.png" alt="Logo" class="logo">
+            <h1>AI Chat Assistant</h1>
+            <p>Chat with our AI assistant to get answers about your current environmental conditions.</p>
+        </div>
+        <div class="chat">
+            <div class="model">
+                <!-- <p>Hi, how can I help you?</p> -->
+            </div>
+            
+        </div>
+        <div class="input">
+            <div class="input-area">
+                <input placeholder="Tanyakan apa pun tentang kondisi lingkungan Kamu sekarang" type="text">
+                <button>
+                    <img src="./../Icon/Vector (1).png" alt="send">
+                </button>
+            </div>
+        </div>
+    </section>
+
+     <script type="importmap">
+        {
+            "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>

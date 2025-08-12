@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Match</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-start relative">
+    <img src="./../image/Game/Untitled-2-01 1 (1).png" class="absolute -bottom-12 -left-6 h-56 sm:h-72" alt="">
+    <img src="./../image/Game/Untitled-2-01 1 (1).png" class="absolute -bottom-12 scale-x-[-1] -right-6 h-56 sm:h-72" alt="">
+
+    <div class="text-center w-full mb-6 pt-20 sm:pt-8">
+      <h1 class="text-4xl font-semibold text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Carbon Match</h1>
+      <p class="text-white font-semibold mt-1 [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Siap tantangan hijau? Cocokkan gambar dan lawan jejak karbonmu!!</p>
+    </div>
+
+    <div class="flex items-center justify-between w-1/2 mb-4">
+      <div class="text-white flex items-center font-semibold text-lg bg-green-700 px-4 h-8 rounded shadow" id="timer">05:00</div>
+      <a href="./index.html"><button class="bg-green-700 hover:bg-green-900 text-white px-4 h-8 rounded shadow">Kembali</button></a>
+    </div>
+
+    <div class="grid grid-cols-5 z-10 gap-2 p-4 bg-white rounded-xl shadow-lg">
+      <!-- Cards will be generated here -->
+    </div>
+
+    <div class="w-full backdrop-blur opacity-0 transition-duration-300 bg-white/50 -z-10 absolute flex justify-center items-center winner h-full">
+      <di class="h-48 w-[320px] sm:w-[360px] flex justify-center items-center bg-[#3BAD00] rounded-[30px]">
+        <img class="absolute h-36 sm:h-40 -translate-y-28 -translate-x-36 sm:-translate-x-44" src="./../image/Game/bot menang-01 1.png" alt="">
+        <div class="bg-white text-center rounded-[30px] flex flex-col justify-center items-center h-[90%] w-full mx-2">
+          <p class="text-xl text-[#339400] font-bold">Keren! Kamu Punya Ingatan Tajam!</p>
+          <p class="text-lg text-[#339400] font-semibold">Waktu Pengerjaan: <span id="timer-stop">05:00</span></p>
+          <div class="flex gap-4 pt-4">
+            <a href="./game.html" class="bg-[linear-gradient(to_bottom_right,_#87F500_9%,_#55C500_39%,_#239600_80%)] flex justify-center items-center gap-2 text-white px-6 py-2 rounded-[30px] shadow hover:opacity-80 hover:scale-105 transition duration-300"><img src="./../image/Game/Vector (2).png" class="h-4" alt=""><p class="text-[16px]">Main Lagi</p></a>
+            <a href="./index.html" class="bg-[linear-gradient(to_bottom_right,_#87F500_9%,_#55C500_39%,_#239600_80%)] text-white px-6 py-2 rounded-[30px] shadow hover:opacity-80 hover:scale-105 transition duration-300"><p class="text-[16px]">Beranda</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full backdrop-blur opacity-0 transition-duration-300 bg-white/50 -z-10 absolute flex justify-center items-center loser h-full">
+      <div class="h-48 w-[320px] sm:w-[360px] relative flex justify-center items-center bg-[#3BAD00] rounded-[30px]">
+        <img class="absolute h-36 sm:h-40 -translate-y-28 -translate-x-36 sm:-translate-x-44" src="./../image/Game/bot sedih-01 1.png" alt="">
+        <div class="bg-white text-center rounded-[30px] flex flex-col justify-center items-center h-[90%] w-full mx-2">
+          <p class="text-xl w-[90%] text-[#339400] font-bold">Waktu habis! Ayo ulangi dan temukan semua pasangan gambar dengan lebih cepat!</p>
+          <div class="flex gap-4 pt-4">
+            <a href="./game.html" class="bg-[linear-gradient(to_bottom_right,_#87F500_9%,_#55C500_39%,_#239600_80%)] flex justify-center items-center gap-2 text-white px-6 py-2 rounded-[30px] shadow hover:opacity-80 hover:scale-105 transition duration-300"><img src="./../image/Game/Vector (2).png" class="h-4" alt=""><p class="text-[16px]">Main Lagi</p></a>
+            <a href="./index.html" class="bg-[linear-gradient(to_bottom_right,_#87F500_9%,_#55C500_39%,_#239600_80%)] text-white px-6 py-2 rounded-[30px] shadow hover:opacity-80 hover:scale-105 transition duration-300"><p class="text-[16px]">Beranda</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

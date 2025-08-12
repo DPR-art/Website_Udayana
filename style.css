@@ -3,11 +3,56 @@
     padding: 0;
 }
 
-body {
+html, body {
     position: relative;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     color: black;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-stack {
+    perspective: 1000px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card.active {
+    z-index: 10;
+    transform: translateX(0) translateY(0) rotateZ(0deg) scale(1);
+}
+
+.card.prev {
+    z-index: 9;
+    transform: translateX(-20px) translateY(-10px) rotateZ(-5deg) scale(0.95);
+    opacity: 0.8;
+}
+
+.card.next {
+    z-index: 8;
+    transform: translateX(20px) translateY(-20px) rotateZ(5deg) scale(0.9);
+    opacity: 0.6;
+}
+
+.card.hidden {
+    z-index: 1;
+    transform: translateX(0) translateY(-40px) rotateZ(0deg) scale(0.85);
+    opacity: 0.3;
+}
+
+.card.dragging {
+    transition: none !important;
+    z-index: 15;
+}
+
+.card-container {
+    touch-action: pan-y;
 }

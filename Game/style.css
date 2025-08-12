@@ -1,0 +1,7 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-image: url(./../image/Game/MacBook\ Pro\ 16_\ -\ 6\ \(2\).png);
+}

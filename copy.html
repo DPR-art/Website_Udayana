@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Environmental Website</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="hamburger.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,90 +19,24 @@
   </head>
   <body class="bg-white">
     <!-- Header Section -->
-    <header class="bg-white shadow-sm relative z-50">
-        <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-leaf text-green-500 text-xl sm:text-2xl"></i>
-                <span class="text-lg sm:text-xl font-semibold text-gray-800">EcoSite</span>
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Beranda</a>
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Tentang</a>
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Artikel</a>
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Kontak</a>
-            </nav>
-
-            <!-- Hamburger Button -->
-            <button id="hamburgerBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200">
-                <div class="w-6 h-6 flex flex-col justify-center items-center">
-                    <div class="hamburger-line line1 w-5 h-0.5 bg-gray-600 mb-1"></div>
-                    <div class="hamburger-line line2 w-5 h-0.5 bg-gray-600 mb-1"></div>
-                    <div class="hamburger-line line3 w-5 h-0.5 bg-gray-600"></div>
-                </div>
-            </button>
+    <header class="bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-leaf text-green-500 text-xl sm:text-2xl"></i>
+          <span class="text-lg sm:text-xl font-semibold text-gray-800">EcoSite</span>
         </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="fixed inset-0 top-[73px] z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-            <!-- Backdrop -->
-            <div class="menu-backdrop absolute inset-0" id="menuBackdrop"></div>
-            
-            <!-- Menu Content -->
-            <div class="absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl">
-                <nav class="p-6 pt-8">
-                    <div class="space-y-1">
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-home mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Beranda</span>
-                        </a>
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-info-circle mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Tentang</span>
-                        </a>
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-newspaper mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Artikel</span>
-                        </a>
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-envelope mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Kontak</span>
-                        </a>
-                    </div>
-
-                    <!-- Additional Menu Items -->
-                    <div class="mt-8 pt-6 border-t border-gray-200">
-                        <div class="space-y-1">
-                            <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                                <i class="fas fa-user mr-3 text-gray-400 group-hover:text-green-500"></i>
-                                <span class="font-medium">Profil</span>
-                            </a>
-                            <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                                <i class="fas fa-cog mr-3 text-gray-400 group-hover:text-green-500"></i>
-                                <span class="font-medium">Pengaturan</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Social Media -->
-                    <div class="mt-8 pt-6 border-t border-gray-200">
-                        <p class="text-sm text-gray-500 mb-4">Ikuti Kami</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+        <nav class="hidden md:flex space-x-4 sm:space-x-8">
+          <a href="#" class="text-gray-600 hover:text-green-500">Beranda</a>
+          <a href="#" class="text-gray-600 hover:text-green-500">Tentang</a>
+          <a href="#" class="text-gray-600 hover:text-green-500">Artikel</a>
+          <a href="#" class="text-gray-600 hover:text-green-500">Kontak</a>
+        </nav>
+        <button class="md:hidden">
+          <i class="fas fa-bars text-gray-600"></i>
+        </button>
+      </div>
     </header>
 
     <section class="py-8 sm:py-16">
@@ -116,7 +49,7 @@
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-start text-[#55C500] mb-4 sm:mb-6">
               Ayo Cek Emisi Karbon Kamu Sekarang!
             </h1>
-            <p class="text-gray-700 text-sm sm:text-lg mb-4 text-justify sm:text-start leading-relaxed">
+            <p class="text-gray-600 text-sm sm:text-lg mb-4 text-justify sm:text-start leading-relaxed">
               Langkah awal mengurangi karbon dimulai dari menghitung emisi karbon pribadi kita berapa banyak tiap tahunnya. Caranya mudah, tinggal masukin data aktivitas harian mulai dari pilihan transportasi, penggunaan listrik dan peralatan elektronik, serta pilihan menu makan.
               <br>
               <br class="hidden sm:block">
@@ -174,7 +107,7 @@
                 <div class="w-full lg:w-1/2 text-center md:text-left text-2xl sm:text-3xl lg:text-[40px]">
                   <h1 class="w-full lg:w-1/2 font-bold bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-transparent bg-clip-text">DAMPAK POLUSI UDARA</h1>
                 </div>
-                <div class="w-full lg:w-1/2 text-gray-700 text-center md:text-right flex justify-center md:justify-end">
+                <div class="w-full lg:w-1/2 text-center md:text-right flex justify-center md:justify-end">
                   <p class="text-sm sm:text-base lg:text-lg">
                     Jika tidak ditindak lanjuti, maka akan berbahaya bagi kita
                     masyarakat dan membuat lingkungan tidak nyaman di huni.
@@ -244,7 +177,7 @@
     <section class="py-8 sm:py-16">
       <div class="container flex flex-col md:flex-row justify-around mx-auto px-4 sm:px-8 gap-8">
         <div class="w-full md:w-[40%]">
-          <img class="w-full" src="./image/Rectangle 54 (1).png" alt="" />
+          <img class="w-full" src="./image/Rectangle 54.png" alt="" />
         </div>
         <div class="w-full md:w-[55%] flex flex-col gap-4">
           <div class="flex flex-col gap-4">
@@ -252,7 +185,7 @@
               5 Dampak Baik Mengurangi Emisi Karbon Kamu untuk Dunia yang Lebih
               Baik
             </h1>
-            <p class="text-sm text-justify text-gray-700 sm:text-base lg:text-lg">
+            <p class="text-sm text-justify sm:text-base lg:text-lg">
               Mengurangi emisi karbon memberikan dampak positif bagi dunia,
               mulai dari udara yang lebih bersih dan sehat, iklim yang lebih
               stabil, hingga alam yang lebih terlindungi dari kerusakan. Selain
@@ -274,7 +207,7 @@
                 />
               </div>
               <p
-                class="text-sm text-gray-800 sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                class="text-sm sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 Konsentrasi gas karbondioksida yang tinggi menyebabkan panas
                 terperangkap di atmosfer karena menyerap radiasi matahari dari
@@ -295,7 +228,7 @@
                 />
               </div>
               <p
-                class="text-sm text-gray-800 sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                class="text-sm sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 Bencana hidrometeorologi seperti banjir, longsor, kekeringan,
                 dan angin topan semakin sering terjadi akibat pemanasan global.
@@ -317,7 +250,7 @@
                 />
               </div>
               <p
-                class="text-sm text-gray-800 sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                class="text-sm sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 Emisi gas karbon dari aktivitas manusia memicu pemanasan global
                 dan perubahan iklim, seperti kekeringan panjang atau hujan
@@ -339,7 +272,7 @@
                 />
               </div>
               <p
-                class="text-sm text-gray-800 sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                class="text-sm sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 Konsentrasi gas karbondioksida yang tinggi menyebabkan panas
                 terperangkap di atmosfer karena menyerap radiasi matahari dari
@@ -362,7 +295,7 @@
                 />
               </div>
               <p
-                class="text-sm text-gray-800 sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                class="text-sm sm:text-base md:text-[15px] pb-2 toggle-text opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
               >
                 Langkah-langkah kecil yang kamu lakukan hari ini, seperti
                 mengurangi penggunaan kendaraan pribadi atau beralih ke energi
@@ -373,24 +306,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600]">
-      <div class="h-48 sm:h-80 container mx-auto sm:px-12 w-full flex items-center justify-center">
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <img src="./image/Bot 1 web-01.png" class="w-[70%]" alt="">
-        </div>
-        <div class="w-[60%] h-full flex flex-col items-center justify-center">
-          <div class="text-start">
-            <h1 class="sm:text-3xl font-bold text-white">Halo, Aku Tura Bot!</h1>
-            <p class="sm:text-2xl sm:mt-2 text-white">Ayo jaga bumi dengan langkah kecil setiap hari. <br>Bersama Tura Bot, lingkungan jadi lebih hijau! </p>
-          </div>
-        </div>
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <a href="./AI/index.html"><button class="bg-white hover:opacity-80 hover:scale-105 transition duration-300 sm:text-2xl text-[#84D300] rounded-full py-2 px-8">Coba</button></a>
-        </div>
-      </div>
-
     </section>
 
     <section class="sm:py-16">
@@ -574,9 +489,9 @@
     <!-- Card Section -->
      <section class="py-8 sm:py-16">
       <div class="container mx-auto px-4 sm:px-8">
-        <div class="flex flex-col lg:flex-row items-center gap-8">
-          <div class="w-full lg:pl-24 lg:w-1/2 flex justify-center order-1 lg:order-2">
-            <div class="card-container w-60 h-80 sm:w-72 sm:h-96 relative card-stack cursor-grab active:cursor-grabbing">
+        <div class="flex flex-col lg:flex-row items-center gap-4 sm:gap-8">
+          <div class="w-full lg:w-1/2 flex justify-center order-2">
+            <div class="card-container w-72 h-96 relative card-stack cursor-grab active:cursor-grabbing">
               <div class="card absolute inset-0 bg-red-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
                   Slide 1
               </div>
@@ -606,11 +521,11 @@
               </div>
             </div>
           </div>
-          <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center sm:items-start order-2 lg:order-1">
+          <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center sm:items-start order-1">
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-start text-[#55C500] mb-4 sm:mb-6">
               Solusi Pencegahan Emisi Karbon
             </h1>
-            <p class="text-gray-700 text-sm sm:text-lg mb-4 text-justify sm:text-start leading-relaxed">
+            <p class="text-gray-600 text-sm sm:text-lg mb-4 text-justify sm:text-start leading-relaxed">
               Emisi karbon adalah tantangan global yang memengaruhi kehidupan kita semua. Untuk itu, kami hadir dengan langkah-langkah sederhana namun berdampak besar guna mengurangi jejak karbon.
               Mulai dari gaya hidup berkelanjutan hingga pilihan cerdas sehari-hari, setiap tindakan kecil membawa perubahan besar bagi bumi.
               <br>
@@ -624,7 +539,7 @@
 
     <!-- Popular Articles -->
     <section class="py-8 sm:py-16">
-      <div class="container mx-auto px-4 sm:px-8 relative z-20">
+      <div class="container mx-auto px-4 sm:px-12 relative z-20">
         <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Popular Articles</h2>
         <div class="flex flex-col md:flex-row w-full gap-6 sm:gap-8">
           <!-- Main Article -->
@@ -658,7 +573,7 @@
                 <h4 class="text-sm sm:text-lg md:text-xl font-semibold leading-snug">
                   Isu Emisi Karbon Tenggelam
                 </h4>
-                <p class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2">
+                <p class="text-xs sm:text-sm md:text-lg text-gray-600 line-clamp-2">
                   Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
                   the...
                 </p>
@@ -677,7 +592,7 @@
                 <h4 class="text-sm sm:text-lg md:text-xl font-semibold leading-snug">
                   Pentingnya Dekarbonisasi Angkutan Barang
                 </h4>
-                <p class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2">
+                <p class="text-xs sm:text-sm md:text-lg text-gray-600 line-clamp-2">
                   Upaya pengurangan emisi karbon dapat dimulai dari angkutan
                   logistik. Peran...
                 </p>
@@ -696,7 +611,7 @@
                 <h4 class="text-sm sm:text-lg md:text-xl font-semibold leading-snug">
                   RI dan Inggris perkuat kolaborasi transportasi rendah emisi
                 </h4>
-                <p class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2">
+                <p class="text-xs sm:text-sm md:text-lg text-gray-600 line-clamp-2">
                   Kementerian Perhubungan Republik...
                 </p>
               </div>
@@ -708,7 +623,7 @@
 
     <!-- Latest Section -->
      <section class="pt-4 sm:pt-8 pb-8 sm:pb-16">
-        <div class="container mx-auto px-4 sm:px-8">
+        <div class="container mx-auto px-4 sm:px-12">
             <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Latest Articles</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">   
                 <div class="flex flex-col gap-3 w-full">
@@ -904,6 +819,5 @@
     <script src="toggle.js"></script>
     <script src="chart.js"></script>
     <script src="card.js"></script>
-    <script src="hamburger.js"></script>
   </body>
 </html>
