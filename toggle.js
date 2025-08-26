@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const isVisible = el.classList.contains('opacity-100');
 
             textElements.forEach((t, idx) => {
-                t.classList.remove('opacity-100', 'max-h-[500px]');
-                t.classList.add('opacity-0', 'max-h-0');
+                t.classList.remove('opacity-100', 'max-h-[500px]', 'mt-2');
+                t.classList.add('opacity-0', 'max-h-0', 'mt-0');
                 buttons[idx].classList.remove('rotate-90');
             });
 
             if (!isVisible) {
-                el.classList.remove('opacity-0', 'max-h-0');
-                el.classList.add('opacity-100', 'max-h-[500px]');
+                el.classList.remove('opacity-0', 'max-h-0', 'mt-0');
+                el.classList.add('opacity-100', 'max-h-[500px]', 'mt-2');
                 buttons[i].classList.add('rotate-90');
             }
         });
