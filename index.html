@@ -21,59 +21,107 @@
   <body class="bg-white">
     <!-- Header Section -->
     <header class="bg-white shadow-sm relative z-50">
-        <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-leaf text-green-500 text-xl sm:text-2xl"></i>
-                <span class="text-lg sm:text-xl font-semibold text-gray-800">EcoSite</span>
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Beranda</a>
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Tentang</a>
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Artikel</a>
-                <a href="#" class="text-gray-600 hover:text-green-500 transition-colors duration-200">Kontak</a>
-            </nav>
-
-            <!-- Hamburger Button -->
-            <button id="hamburgerBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200">
-                <div class="w-6 h-6 flex flex-col justify-center items-center">
-                    <div class="hamburger-line line1 w-5 h-0.5 bg-gray-600 mb-1"></div>
-                    <div class="hamburger-line line2 w-5 h-0.5 bg-gray-600 mb-1"></div>
-                    <div class="hamburger-line line3 w-5 h-0.5 bg-gray-600"></div>
-                </div>
-            </button>
+      <div
+        class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-leaf text-green-500 text-xl sm:text-2xl"></i>
+          <span class="text-lg sm:text-xl font-semibold text-gray-800"
+            >EcoSite</span
+          >
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="fixed inset-0 top-[73px] z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-            <!-- Backdrop -->
-            <div class="menu-backdrop absolute inset-0" id="menuBackdrop"></div>
-            
-            <!-- Menu Content -->
-            <div class="absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl">
-                <nav class="p-6 pt-8">
-                    <div class="space-y-1">
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-home mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Beranda</span>
-                        </a>
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-info-circle mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Tentang</span>
-                        </a>
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-newspaper mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Artikel</span>
-                        </a>
-                        <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                            <i class="fas fa-envelope mr-3 text-gray-400 group-hover:text-green-500"></i>
-                            <span class="font-medium">Kontak</span>
-                        </a>
-                    </div>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-green-500 transition-colors duration-200"
+            >Beranda</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-green-500 transition-colors duration-200"
+            >Tentang</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-green-500 transition-colors duration-200"
+            >Artikel</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-green-500 transition-colors duration-200"
+            >Kontak</a
+          >
+        </nav>
 
-                    <!-- Additional Menu Items -->
-                    <!-- <div class="mt-8 pt-6 border-t border-gray-200">
+        <!-- Hamburger Button -->
+        <button
+          id="hamburgerBtn"
+          class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+        >
+          <div class="w-6 h-6 flex flex-col justify-center items-center">
+            <div class="hamburger-line line1 w-5 h-0.5 bg-gray-600 mb-1"></div>
+            <div class="hamburger-line line2 w-5 h-0.5 bg-gray-600 mb-1"></div>
+            <div class="hamburger-line line3 w-5 h-0.5 bg-gray-600"></div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 top-[73px] z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+      >
+        <!-- Backdrop -->
+        <div class="menu-backdrop absolute inset-0" id="menuBackdrop"></div>
+
+        <!-- Menu Content -->
+        <div
+          class="absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl"
+        >
+          <nav class="p-6 pt-8">
+            <div class="space-y-1">
+              <a
+                href="#"
+                class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group"
+              >
+                <i
+                  class="fas fa-home mr-3 text-gray-400 group-hover:text-green-500"
+                ></i>
+                <span class="font-medium">Beranda</span>
+              </a>
+              <a
+                href="#"
+                class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group"
+              >
+                <i
+                  class="fas fa-info-circle mr-3 text-gray-400 group-hover:text-green-500"
+                ></i>
+                <span class="font-medium">Tentang</span>
+              </a>
+              <a
+                href="#"
+                class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group"
+              >
+                <i
+                  class="fas fa-newspaper mr-3 text-gray-400 group-hover:text-green-500"
+                ></i>
+                <span class="font-medium">Artikel</span>
+              </a>
+              <a
+                href="#"
+                class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group"
+              >
+                <i
+                  class="fas fa-envelope mr-3 text-gray-400 group-hover:text-green-500"
+                ></i>
+                <span class="font-medium">Kontak</span>
+              </a>
+            </div>
+
+            <!-- Additional Menu Items -->
+            <!-- <div class="mt-8 pt-6 border-t border-gray-200">
                         <div class="space-y-1">
                             <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
                                 <i class="fas fa-user mr-3 text-gray-400 group-hover:text-green-500"></i>
@@ -86,46 +134,83 @@
                         </div>
                     </div> -->
 
-                    <!-- Social Media -->
-                    <div class="mt-8 pt-6 border-t border-gray-200">
-                        <p class="text-sm text-gray-500 mb-4">Ikuti Kami</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
+            <!-- Social Media -->
+            <div class="mt-8 pt-6 border-t border-gray-200">
+              <p class="text-sm text-gray-500 mb-4">Ikuti Kami</p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
+          </nav>
         </div>
+      </div>
     </header>
+
+    <section class="py-8 sm:py-16">
+      <div class="container relative max-w-6xl px-4 sm:px-12 mx-auto">
+          <img src="./image/Peta.png" class="map-image" alt="Peta Indonesia" />
+
+          <!-- Titik emisi -->
+          <div class="dot jakarta" title="Jakarta: Emisi Tinggi"></div>
+          <div class="dot bekasi" title="Bekasi: Emisi Sedang"></div>
+          <div class="dot bandung" title="Bandung: Emisi Tinggi"></div>
+      </div>
+    </section>
 
     <section class="py-8 sm:py-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
         <div class="flex flex-col lg:flex-row items-center gap-4 sm:gap-8">
           <div class="w-full lg:w-1/2 flex justify-center order-1">
-            <img src="./image/ChatGPT Image 18 Jun 2025, 07.51.25-Photoroom 1.png" alt="" class="w-full">
+            <img
+              src="./image/ChatGPT Image 18 Jun 2025, 07.51.25-Photoroom 1.png"
+              alt=""
+              class="w-full"
+            />
           </div>
-          <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center sm:items-start order-2">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-start text-[#55C500] mb-4 sm:mb-6">
+          <div
+            class="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center sm:items-start order-2"
+          >
+            <h1
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-start text-[#55C500] mb-4 sm:mb-6"
+            >
               Ayo Cek Emisi Karbon Kamu Sekarang!
             </h1>
-            <p class="text-gray-700 text-sm sm:text-lg mb-4 text-justify leading-relaxed">
-              Langkah awal mengurangi karbon dimulai dari menghitung emisi karbon pribadi kita berapa banyak tiap tahunnya. Caranya mudah, tinggal masukin data aktivitas harian mulai dari pilihan transportasi, penggunaan listrik dan peralatan elektronik, serta pilihan menu makan.
-              <br>
-              <br class="hidden sm:block">
-              Hasil hitunganya bisa dilihat langsung. Kamu juga bisa bandingin emisi kamu dengan rata-rata orang Indonesia, ASEAN, Global, atau bahkan dengan teman kamu yang juga mencoba kalkulator jejakkarbonku.id
+            <p
+              class="text-gray-700 text-sm sm:text-lg mb-4 text-justify leading-relaxed"
+            >
+              Langkah awal mengurangi karbon dimulai dari menghitung emisi
+              karbon pribadi kita berapa banyak tiap tahunnya. Caranya mudah,
+              tinggal masukin data aktivitas harian mulai dari pilihan
+              transportasi, penggunaan listrik dan peralatan elektronik, serta
+              pilihan menu makan.
+              <br />
+              <br class="hidden sm:block" />
+              Hasil hitunganya bisa dilihat langsung. Kamu juga bisa bandingin
+              emisi kamu dengan rata-rata orang Indonesia, ASEAN, Global, atau
+              bahkan dengan teman kamu yang juga mencoba kalkulator
+              jejakkarbonku.id
             </p>
             <a href="./Calculator/index.html">
               <button
                 class="border-2 border-[#55C500] text-[#55C500] px-4 sm:px-8 py-2 sm:py-3 rounded-[15px] hover:text-white hover:bg-[#55C500] transition duration-300 text-sm sm:text-base"
-                >
+              >
                 Mulai Hitung Emisi Karbon Kamu!
               </button>
             </a>
@@ -138,32 +223,58 @@
     <section class="pt-8 sm:pt-16">
       <div class="relative">
         <div class="relative z-10 mx-auto">
-          <div class="container max-w-6xl px-4 sm:px-12 mx-auto w-[95%] sm:w-full bg-white gap-2 sm:gap-8 flex flex-col md:flex-row">
+          <div
+            class="container max-w-6xl px-4 sm:px-12 mx-auto w-[95%] sm:w-full bg-white gap-2 sm:gap-8 flex flex-col md:flex-row"
+          >
             <div
               class="w-full hover:scale-[1.02] z-30 transition duration-300 flex items-center md:items-start md:w-1/2 h-[60vw] sm:h-[50vw] md:h-[37vw] rounded-lg bg-cover bg-no-repeat bg-[url(./image/Gradient.png)] flex justify-center"
             >
-              <h1 class="text-xl sm:text-2xl lg:text-4xl text-white pt-0 align-middle md:pt-16 w-[80%] sm:w-[70%] text-center md:text-left lg:leading-[1.3]">
-                Namun, <br><span class="font-semibold">
+              <h1
+                class="text-xl sm:text-2xl lg:text-4xl text-white pt-0 align-middle md:pt-16 w-[80%] sm:w-[70%] text-center md:text-left lg:leading-[1.3]"
+              >
+                Namun, <br /><span class="font-semibold">
                   Mengapa Polusi Udara Indonesia Sangat Tinggi?</span
                 >
               </h1>
             </div>
-            <div class="w-full md:w-1/2 h-[80vw] sm:h-[50vw] md:h-[37vw] flex flex-col justify-between gap-2 sm:gap-6">
-              <div class="w-full h-[85%] sm:h-[70%] gap-2 sm:gap-8 flex flex-col sm:flex-row">
-                <div class="w-full h-36 hover:scale-[1.02] transition duration-300 sm:h-full sm:w-1/2 rounded-lg flex items-center bg-cover bg-no-repeat bg-[url(./image/Gradient2.png)]">
-                  <div class="flex text-white flex-col sm:gap-2 pl-4 sm:pl-4 py-4 sm:pt-8 lg:pt-8 md:h-full w-[90%] sm:w-[80%]">
-                    <p class="text-sm sm:text-md lg:text-xl">Penyebab utama polusi udara yaitu</p>
-                    <p class="text-2xl sm:text-3xl lg:text-5xl font-bold leading-none">EMISI GAS</p>
+            <div
+              class="w-full md:w-1/2 h-[80vw] sm:h-[50vw] md:h-[37vw] flex flex-col justify-between gap-2 sm:gap-6"
+            >
+              <div
+                class="w-full h-[85%] sm:h-[70%] gap-2 sm:gap-8 flex flex-col sm:flex-row"
+              >
+                <div
+                  class="w-full h-36 hover:scale-[1.02] transition duration-300 sm:h-full sm:w-1/2 rounded-lg flex items-center bg-cover bg-no-repeat bg-[url(./image/Gradient2.png)]"
+                >
+                  <div
+                    class="flex text-white flex-col sm:gap-2 pl-4 sm:pl-4 py-4 sm:pt-8 lg:pt-8 md:h-full w-[90%] sm:w-[80%]"
+                  >
+                    <p class="text-sm sm:text-md lg:text-xl">
+                      Penyebab utama polusi udara yaitu
+                    </p>
+                    <p
+                      class="text-2xl sm:text-3xl lg:text-5xl font-bold leading-none"
+                    >
+                      EMISI GAS
+                    </p>
                     <p class="text-sm sm:text-md lg:text-xl">
                       dari sektor
                       <span class="font-semibold">transportasi</span>
                     </p>
                   </div>
                 </div>
-                <div class="w-full h-36 hover:scale-[1.02] transition duration-300 sm:h-full sm:w-1/2 rounded-lg flex items-center bg-cover bg-no-repeat bg-[url(./image/Gradient2.png)]">
-                  <div class="flex text-white flex-col sm:gap-2 pl-4 sm:pl-4 py-4 sm:pt-8 lg:pt-8 md:h-full w-[90%] sm:w-[80%]">
-                    <p class="text-sm sm:text-md lg:text-xl">Sektor pendukung polusi udara yaitu</p>
-                    <p class="text-2xl lg:text-3xl font-bold leading-none">PEMBAKARAN SAMPAH</p>
+                <div
+                  class="w-full h-36 hover:scale-[1.02] transition duration-300 sm:h-full sm:w-1/2 rounded-lg flex items-center bg-cover bg-no-repeat bg-[url(./image/Gradient2.png)]"
+                >
+                  <div
+                    class="flex text-white flex-col sm:gap-2 pl-4 sm:pl-4 py-4 sm:pt-8 lg:pt-8 md:h-full w-[90%] sm:w-[80%]"
+                  >
+                    <p class="text-sm sm:text-md lg:text-xl">
+                      Sektor pendukung polusi udara yaitu
+                    </p>
+                    <p class="text-2xl lg:text-3xl font-bold leading-none">
+                      PEMBAKARAN SAMPAH
+                    </p>
                     <p class="text-sm sm:text-md lg:text-xl">
                       dari emisi
                       <span class="font-semibold">rumah tangga</span>
@@ -171,10 +282,24 @@
                   </div>
                 </div>
               </div>
-              <div class="w-full h-[15%] sm:h-[25%] hover:scale-[1.02] z-30 transition duration-300 relative flex items-center bg-blue-100"> 
-                <h1 class="font-bold text-lg sm:text-2xl md:text-3xl ml-4 sm:ml-8 bg-gradient-to-br from-[#87F500] z-10 via-[#55C500] to-[#239600] text-transparent bg-clip-text">Cari tau lebih lanjut?</h1>
-                <img src="./image/Group 48095557.png" class="z-10 h-4 sm:h-8 absolute right-0 bottom-0 mb-2 mr-2 sm:mb-4 sm:mr-4" alt="">
-                <img src="./image/Rectangle.png" class="absolute w-full h-full" alt="">
+              <div
+                class="w-full h-[15%] sm:h-[25%] hover:scale-[1.02] z-30 transition duration-300 relative flex items-center bg-blue-100"
+              >
+                <h1
+                  class="font-bold text-lg sm:text-2xl md:text-3xl ml-4 sm:ml-8 bg-gradient-to-br from-[#87F500] z-10 via-[#55C500] to-[#239600] text-transparent bg-clip-text"
+                >
+                  Cari tau lebih lanjut?
+                </h1>
+                <img
+                  src="./image/Group 48095557.png"
+                  class="z-10 h-4 sm:h-8 absolute right-0 bottom-0 mb-2 mr-2 sm:mb-4 sm:mr-4"
+                  alt=""
+                />
+                <img
+                  src="./image/Rectangle.png"
+                  class="absolute w-full h-full"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -182,11 +307,21 @@
             <div
               class="container max-w-6xl mx-auto flex flex-col items-center relative pt-8 sm:pt-16 pb-8 sm:pb-32 px-4 sm:px-12 bg-white sm:bg-transparant w-[95%] sm:w-full rounded-b-lg"
             >
-              <div class="flex flex-col md:flex-row w-full items-center h-auto md:h-32 gap-4 md:gap-0">
-                <div class="w-full lg:w-1/2 text-center md:text-left text-2xl sm:text-3xl lg:text-[40px]">
-                  <h1 class="w-full lg:w-[60%] font-extrabold bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-transparent bg-clip-text">DAMPAK POLUSI UDARA</h1>
+              <div
+                class="flex flex-col md:flex-row w-full items-center h-auto md:h-32 gap-4 md:gap-0"
+              >
+                <div
+                  class="w-full lg:w-1/2 text-center md:text-left text-2xl sm:text-3xl lg:text-[40px]"
+                >
+                  <h1
+                    class="w-full lg:w-[55%] font-extrabold bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-transparent bg-clip-text"
+                  >
+                    DAMPAK POLUSI UDARA
+                  </h1>
                 </div>
-                <div class="w-full lg:w-1/2 text-gray-700 text-center md:text-right flex justify-center md:justify-end">
+                <div
+                  class="w-full lg:w-1/2 text-gray-700 text-center md:text-right flex justify-center md:justify-end"
+                >
                   <p class="text-sm sm:text-base lg:text-lg">
                     Jika tidak ditindak lanjuti, maka akan berbahaya bagi kita
                     masyarakat dan membuat lingkungan tidak nyaman di huni.
@@ -196,7 +331,9 @@
               <div
                 class="grid grid-cols-1 mt-12 md:mt-0 sm:grid-cols-2 md:grid-cols-3 md:absolute w-full px-2 sm:px-12 md:-bottom-32 gap-6"
               >
-                <div class="bg-white sm:hover:scale-105 hover:-translate-y-8 hover:border-[#55C500] hover:border-2 transition duration-300 p-6 rounded-lg shadow-xl text-center">
+                <div
+                  class="bg-white sm:hover:scale-105 hover:-translate-y-8 hover:border-[#55C500] hover:border-2 transition duration-300 p-6 rounded-lg shadow-xl text-center"
+                >
                   <div
                     class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
                   >
@@ -210,7 +347,9 @@
                     global.
                   </p>
                 </div>
-                <div class="bg-white sm:hover:scale-105 hover:-translate-y-8 hover:border-[#55C500] hover:border-2 transition duration-300 p-6 rounded-lg shadow-xl text-center">
+                <div
+                  class="bg-white sm:hover:scale-105 hover:-translate-y-8 hover:border-[#55C500] hover:border-2 transition duration-300 p-6 rounded-lg shadow-xl text-center"
+                >
                   <div
                     class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
                   >
@@ -224,7 +363,9 @@
                     per tahun.
                   </p>
                 </div>
-                <div class="bg-white sm:hover:scale-105 hover:-translate-y-8 hover:border-[#55C500] hover:border-2 transition duration-300 p-6 rounded-lg shadow-xl text-center sm:col-span-2 md:col-span-1">
+                <div
+                  class="bg-white sm:hover:scale-105 hover:-translate-y-8 hover:border-[#55C500] hover:border-2 transition duration-300 p-6 rounded-lg shadow-xl text-center sm:col-span-2 md:col-span-1"
+                >
                   <div
                     class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4"
                   >
@@ -242,7 +383,9 @@
             </div>
           </div>
         </div>
-        <div class="absolute md:relative w-full h-[140vh] sm:h-[100vh] bottom-0 -translate-y-4 sm:-translate-y-8">
+        <div
+          class="absolute md:relative w-full h-[140vh] sm:h-[100vh] bottom-0 -translate-y-4 sm:-translate-y-8"
+        >
           <img
             class="md:absolute w-full h-full object-cover"
             src="./image/Conseils d’un arbre 1 (1).png"
@@ -253,19 +396,40 @@
     </section>
 
     <section class="pt-16">
-      <div class="container max-w-6xl mx-auto px-4 sm:px-12">        
-        <div class="h-72 sm:h-52 bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] rounded-lg w-full flex flex-col sm:flex-row items-center justify-center">
-          <div class="sm:w-[20%] py-2 w-full h-full flex items-center justify-center">
-            <img src="./image/Bot 1 web-01.png" class="w-[18%] sm:w-[60%]" alt="">
+      <div class="container max-w-6xl mx-auto px-4 sm:px-12">
+        <div
+          class="h-72 sm:h-52 bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] rounded-lg w-full flex flex-col sm:flex-row items-center justify-center"
+        >
+          <div
+            class="sm:w-[20%] py-2 w-full h-full flex items-center justify-center"
+          >
+            <img
+              src="./image/Bot 1 web-01.png"
+              class="w-[18%] sm:w-[60%]"
+              alt=""
+            />
           </div>
-          <div class="sm:w-[60%] px-4 sm:px-0 h-full flex flex-col items-center justify-center">
+          <div
+            class="sm:w-[60%] px-4 sm:px-0 h-full flex flex-col items-center justify-center"
+          >
             <div class="text-center sm:text-start">
-              <h1 class="sm:text-3xl font-bold text-white">Halo, Aku Tura Bot!</h1>
-              <p class="sm:text-xl sm:mt-2 text-white">Ayo jaga bumi dengan langkah kecil setiap hari. Bersama Tura Bot, lingkungan jadi lebih hijau! </p>
+              <h1 class="sm:text-3xl font-bold text-white">
+                Halo, Aku Tura Bot!
+              </h1>
+              <p class="sm:text-xl sm:mt-2 text-white">
+                Ayo jaga bumi dengan langkah kecil setiap hari. Bersama Tura
+                Bot, lingkungan jadi lebih hijau!
+              </p>
             </div>
           </div>
           <div class="sm:w-[20%] h-full flex items-center justify-center">
-            <a href="./AI/index.html"><button class="bg-white hover:opacity-80 hover:scale-105 transition duration-300 sm:text-xl text-[#84D300] rounded-full py-2 px-8">Coba</button></a>
+            <a href="./AI/index.html"
+              ><button
+                class="bg-white hover:opacity-80 hover:scale-105 transition duration-300 sm:text-xl text-[#84D300] rounded-full py-2 px-8"
+              >
+                Coba
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -273,17 +437,27 @@
 
     <!-- Statistics Section -->
     <section class="py-8 sm:py-16">
-      <div class="container max-w-6xl px-4 sm:px-12 flex flex-col md:flex-row justify-around mx-auto gap-8">
+      <div
+        class="container max-w-6xl px-4 sm:px-12 flex flex-col md:flex-row justify-around mx-auto gap-8"
+      >
         <div class="w-full md:w-[40%]">
-          <img class=" w-[60%] mx-auto sm:w-full rounded-tr-lg rounded-bl-lg" src="./image/Rectangle 54 (2).png" alt="" />
+          <img
+            class="w-[60%] mx-auto sm:w-full rounded-tr-lg rounded-bl-lg"
+            src="./image/Rectangle 54 (2).png"
+            alt=""
+          />
         </div>
         <div class="w-full md:w-[55%] flex flex-col gap-4">
           <div class="flex flex-col gap-4">
-            <h1 class="font-semibold md:leading-[35px] text-lg sm:text-xl md:text-[23px]">
+            <h1
+              class="font-semibold md:leading-[35px] text-lg sm:text-xl md:text-[23px]"
+            >
               5 Dampak Baik Mengurangi Emisi Karbon Kamu untuk Dunia yang Lebih
               Baik
             </h1>
-            <p class="text-sm text-justify text-gray-700 sm:text-base lg:text-md">
+            <p
+              class="text-sm text-justify text-gray-700 sm:text-base lg:text-md"
+            >
               Mengurangi emisi karbon memberikan dampak positif bagi dunia,
               mulai dari udara yang lebih bersih dan sehat, iklim yang lebih
               stabil, hingga alam yang lebih terlindungi dari kerusakan. Selain
@@ -297,7 +471,9 @@
               class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-4 sm:px-8 rounded-[20px]"
             >
               <div class="flex justify-between items-center">
-                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">Pemanasan Global</h1>
+                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">
+                  Pemanasan Global
+                </h1>
                 <img
                   src="./image/ep_arrow-down-bold.png"
                   class="h-[20px] sm:h-[24px] toggle-btn transition-transform duration-300"
@@ -318,7 +494,9 @@
               class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-4 sm:px-8 rounded-[20px]"
             >
               <div class="flex justify-between items-center">
-                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">Bencana Alam</h1>
+                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">
+                  Bencana Alam
+                </h1>
                 <img
                   src="./image/ep_arrow-down-bold.png"
                   class="h-[20px] sm:h-[24px] toggle-btn transition-transform duration-300"
@@ -340,7 +518,9 @@
               class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-4 sm:px-8 rounded-[20px]"
             >
               <div class="flex justify-between items-center">
-                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">Ketersediaan Air</h1>
+                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">
+                  Ketersediaan Air
+                </h1>
                 <img
                   src="./image/ep_arrow-down-bold.png"
                   class="h-[20px] sm:h-[24px] toggle-btn transition-transform duration-300"
@@ -362,7 +542,9 @@
               class="bg-[#D9D9D9] cursor-pointer toggle-div py-4 px-4 sm:px-8 rounded-[20px]"
             >
               <div class="flex justify-between items-center">
-                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">Isu Kesehatan</h1>
+                <h1 class="font-semibold text-lg sm:text-xl md:text-[23px]">
+                  Isu Kesehatan
+                </h1>
                 <img
                   src="./image/ep_arrow-down-bold.png"
                   class="h-[20px] sm:h-[24px] toggle-btn transition-transform duration-300"
@@ -406,53 +588,100 @@
       </div>
     </section>
 
-   <!-- Game Section -->
-    <section class="py-8 sm:py-16 relative h-[120vh] sm:h-[150vh] mt-32 sm:mt-52 flex items-center justify-center">
+    <!-- Game Section -->
+    <section
+      class="py-8 sm:py-16 relative h-[120vh] sm:h-[150vh] mt-32 sm:mt-52 flex items-center justify-center"
+    >
       <!-- Background Image -->
-      <img src="./image/Group 48095607 (4).png" class="absolute w-full h-[120vh] mt-16 sm:mt-32 md:h-[230vh]" alt="">
+      <img
+        src="./image/Group 48095607 (4).png"
+        class="absolute w-full h-[120vh] mt-16 sm:mt-32 md:h-[230vh]"
+        alt=""
+      />
 
       <!-- Content -->
-      <div class="relative z-10 container max-w-6xl px-4 sm:px-12 mb-20 sm:mb-40 text-center justify-center flex flex-col h-full items-center">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 sm:mb-6 text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">
+      <div
+        class="relative z-10 container max-w-6xl px-4 sm:px-12 mb-20 sm:mb-40 text-center justify-center flex flex-col h-full items-center"
+      >
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 sm:mb-6 text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]"
+        >
           Carbon Match
         </h1>
-        <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-relaxed [text-shadow:0_2px_4px_rgba(0,0,0,0.25)] px-4">
-          Daripada hanya menggulir layar, coba mainkan Carbon Match, permainan mencocokkan gambar yang seru dan bisa menambah wawasan tentang emisi karbon
+        <p
+          class="text-white text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-relaxed [text-shadow:0_2px_4px_rgba(0,0,0,0.25)] px-4"
+        >
+          Daripada hanya menggulir layar, coba mainkan Carbon Match, permainan
+          mencocokkan gambar yang seru dan bisa menambah wawasan tentang emisi
+          karbon
         </p>
 
         <a href="./Game/index.html" class="mt-6 sm:mt-10">
-          <img src="./../image/Game/Group 48095600.png" class="w-40 sm:w-52 md:w-64 hover:opacity-80 hover:scale-105 transition-transform duration-300 cursor-pointer" alt="Mainkan">
+          <img
+            src="./../image/Game/Group 48095600.png"
+            class="w-40 sm:w-52 md:w-64 hover:opacity-80 hover:scale-105 transition-transform duration-300 cursor-pointer"
+            alt="Mainkan"
+          />
         </a>
       </div>
 
-      <div class="absolute group ml-4 sm:ml-8 top-32 sm:top-0 left-0 w-[79vw] h-[100vh] sm:h-[120vh] flex items-start justify-start">
-        <img src="./image/Group 48095603.png" class="h-32 sm:h-48 md:h-80 absolute object-contain z-10" alt="">
-        <img src="./image/Group 48095581 3 (1).png" 
-            class="h-16 sm:h-24 md:h-40 -rotate-[15deg] ml-8 sm:ml-16 md:ml-24 mt-4 sm:mt-8 object-contain z-10 cursor-pointer" 
-            alt="Train Card" />
+      <div
+        class="absolute group ml-4 sm:ml-8 top-32 sm:top-0 left-0 w-[79vw] h-[100vh] sm:h-[120vh] flex items-start justify-start"
+      >
+        <img
+          src="./image/Group 48095603.png"
+          class="h-32 sm:h-48 md:h-80 absolute object-contain z-10"
+          alt=""
+        />
+        <img
+          src="./image/Group 48095581 3 (1).png"
+          class="h-16 sm:h-24 md:h-40 -rotate-[15deg] ml-8 sm:ml-16 md:ml-24 mt-4 sm:mt-8 object-contain z-10 cursor-pointer"
+          alt="Train Card"
+        />
 
-        <div class="absolute bg-white text-xs sm:text-sm text-gray-800 p-2 sm:p-3 rounded-md shadow-lg w-48 sm:w-64 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-20">
-          Kereta api adalah salah satu moda transportasi ramah lingkungan yang menghasilkan emisi karbon lebih rendah dibanding mobil atau pesawat.
-        </div>
-      </div>
-
-      <div class="absolute group right-0 mr-4 sm:mr-8 w-[70vw] h-[60vh] sm:h-[75vh] flex items-end justify-end">
-        <img src="./image/Group 48095604.png" class="h-24 sm:h-32 md:h-52 absolute object-contain z-10" alt="CO2 Card" />
-        <img src="./image/Group 48095577 1.png" class="h-16 sm:h-24 md:h-40 mr-12 sm:mr-14 md:mr-24 mb-4 sm:mb-8 rotate-[15deg] object-contain z-10" alt="CO2 Card" />
-
-        <div class="absolute bg-white text-xs sm:text-sm text-gray-800 p-2 sm:p-3 rounded-md shadow-lg w-48 sm:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
-          CO₂ (karbon dioksida) merupakan salah satu gas rumah kaca utama penyebab pemanasan global. Mengurangi emisi CO₂ penting untuk menjaga lingkungan.
-        </div>
-      </div>
-
-      <img src="./image/bot4-01 1.png" class="absolute h-40 sm:h-60 md:h-80 ml-4 sm:ml-8 left-0 bottom-24 sm:bottom-16" alt="">
-    </section>
-    
-    <section class="sm:py-16">
-      <div class="w-full flex justify-center sm:px-16 container max-w-6xl mx-auto">
         <div
-          class="px-8 w-full py-8 bg-white rounded-lg sm:shadow-lg z-10"
+          class="absolute bg-white text-xs sm:text-sm text-gray-800 p-2 sm:p-3 rounded-md shadow-lg w-48 sm:w-64 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-20"
         >
+          Kereta api adalah salah satu moda transportasi ramah lingkungan yang
+          menghasilkan emisi karbon lebih rendah dibanding mobil atau pesawat.
+        </div>
+      </div>
+
+      <div
+        class="absolute group right-0 mr-4 sm:mr-8 w-[70vw] h-[60vh] sm:h-[75vh] flex items-end justify-end"
+      >
+        <img
+          src="./image/Group 48095604.png"
+          class="h-24 sm:h-32 md:h-52 absolute object-contain z-10"
+          alt="CO2 Card"
+        />
+        <img
+          src="./image/Group 48095577 1.png"
+          class="h-16 sm:h-24 md:h-40 mr-12 sm:mr-14 md:mr-24 mb-4 sm:mb-8 rotate-[15deg] object-contain z-10"
+          alt="CO2 Card"
+        />
+
+        <div
+          class="absolute bg-white text-xs sm:text-sm text-gray-800 p-2 sm:p-3 rounded-md shadow-lg w-48 sm:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"
+        >
+          CO₂ (karbon dioksida) merupakan salah satu gas rumah kaca utama
+          penyebab pemanasan global. Mengurangi emisi CO₂ penting untuk menjaga
+          lingkungan.
+        </div>
+      </div>
+
+      <img
+        src="./image/bot4-01 1.png"
+        class="absolute h-40 sm:h-60 md:h-80 ml-4 sm:ml-8 left-0 bottom-24 sm:bottom-16"
+        alt=""
+      />
+    </section>
+
+    <section class="sm:py-16">
+      <div
+        class="w-full flex justify-center sm:px-16 container max-w-6xl mx-auto"
+      >
+        <div class="px-8 w-full py-8 bg-white rounded-lg sm:shadow-lg z-10">
           <!-- Header with Legend -->
           <div class="mb-16 flex justify-between items-start">
             <div>
@@ -585,47 +814,80 @@
     </section>
 
     <!-- Card Section -->
-     <section class="py-8 sm:py-16">
+    <section class="py-8 sm:py-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
         <div class="flex flex-col lg:flex-row items-center gap-8">
-          <div class="w-full lg:pl-24 lg:w-1/2 flex justify-center order-1 lg:order-2">
-            <div class="card-container w-60 h-80 sm:w-72 sm:h-96 relative card-stack cursor-grab active:cursor-grabbing">
-              <div class="card absolute inset-0 bg-red-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 1
+          <div
+            class="w-full lg:pl-24 lg:w-1/2 flex justify-center order-1 lg:order-2"
+          >
+            <div
+              class="card-container w-60 h-80 sm:w-72 sm:h-96 relative card-stack cursor-grab active:cursor-grabbing"
+            >
+              <div
+                class="card absolute inset-0 bg-red-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 1
               </div>
-              <div class="card absolute inset-0 bg-blue-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 2
+              <div
+                class="card absolute inset-0 bg-blue-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 2
               </div>
-              <div class="card absolute inset-0 bg-green-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 3
+              <div
+                class="card absolute inset-0 bg-green-500 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 3
               </div>
-              <div class="card absolute inset-0 bg-orange-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 4
+              <div
+                class="card absolute inset-0 bg-orange-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 4
               </div>
-              <div class="card absolute inset-0 bg-lime-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 5
+              <div
+                class="card absolute inset-0 bg-lime-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 5
               </div>
-              <div class="card absolute inset-0 bg-pink-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 6
+              <div
+                class="card absolute inset-0 bg-pink-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 6
               </div>
-              <div class="card absolute inset-0 bg-green-700 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 7
+              <div
+                class="card absolute inset-0 bg-green-700 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 7
               </div>
-              <div class="card absolute inset-0 bg-blue-700 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 8
+              <div
+                class="card absolute inset-0 bg-blue-700 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 8
               </div>
-              <div class="card absolute inset-0 bg-purple-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg">
-                  Slide 9
+              <div
+                class="card absolute inset-0 bg-purple-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-lg"
+              >
+                Slide 9
               </div>
             </div>
           </div>
-          <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center sm:items-start order-2 lg:order-1">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-start text-[#55C500] mb-4 sm:mb-6">
+          <div
+            class="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center sm:items-start order-2 lg:order-1"
+          >
+            <h1
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-start text-[#55C500] mb-4 sm:mb-6"
+            >
               Solusi Pencegahan Emisi Karbon
             </h1>
-            <p class="text-gray-700 text-sm sm:text-lg mb-4 text-justify leading-relaxed">
-              Emisi karbon adalah tantangan global yang memengaruhi kehidupan kita semua. Dengan adanya emisi karbon di indonesia yang berdampak cukup signifikan, kami hadir dengan langkah-langkah sederhana namun berdampak besar guna mengurangi jejak karbon.
-              Mulai dari gaya hidup berkelanjutan hingga pilihan cerdas sehari-hari, Mari mulailah jejak perjalanan yang ramah lingkungan untuk mewujudkan masa depan yang lebih hijau dan sehat!
+            <p
+              class="text-gray-700 text-sm sm:text-lg mb-4 text-justify leading-relaxed"
+            >
+              Emisi karbon adalah tantangan global yang memengaruhi kehidupan
+              kita semua. Dengan adanya emisi karbon di indonesia yang berdampak
+              cukup signifikan, kami hadir dengan langkah-langkah sederhana
+              namun berdampak besar guna mengurangi jejak karbon. Mulai dari
+              gaya hidup berkelanjutan hingga pilihan cerdas sehari-hari, Mari
+              mulailah jejak perjalanan yang ramah lingkungan untuk mewujudkan
+              masa depan yang lebih hijau dan sehat!
             </p>
           </div>
         </div>
@@ -635,7 +897,9 @@
     <!-- Popular Articles -->
     <section class="py-8 sm:py-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto relative z-20">
-        <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Popular Articles</h2>
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">
+          Popular Articles
+        </h2>
         <div class="flex flex-col md:flex-row w-full gap-6 sm:gap-8">
           <!-- Main Article -->
           <div class="flex flex-col w-full md:w-1/2">
@@ -644,7 +908,9 @@
               alt="Main"
               class="rounded-lg mb-4 w-full h-48 sm:h-64 md:h-auto object-cover"
             />
-            <p class="text-xs sm:text-sm text-gray-500 mb-1">Selasa, 26 November 2025</p>
+            <p class="text-xs sm:text-sm text-gray-500 mb-1">
+              Selasa, 26 November 2025
+            </p>
             <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-1">
               Butuh Dukungan Kolektif Turunkan Emisi Karbon
             </h3>
@@ -665,10 +931,14 @@
               />
               <div class="flex-1">
                 <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                <h4 class="text-sm sm:text-lg md:text-xl font-semibold leading-snug">
+                <h4
+                  class="text-sm sm:text-lg md:text-xl font-semibold leading-snug"
+                >
                   Isu Emisi Karbon Tenggelam
                 </h4>
-                <p class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2">
+                <p
+                  class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2"
+                >
                   Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
                   the...
                 </p>
@@ -684,10 +954,14 @@
               />
               <div class="flex-1">
                 <p class="text-xs text-gray-500">Kamis, 10 April 2025</p>
-                <h4 class="text-sm sm:text-lg md:text-xl font-semibold leading-snug">
+                <h4
+                  class="text-sm sm:text-lg md:text-xl font-semibold leading-snug"
+                >
                   Pentingnya Dekarbonisasi Angkutan Barang
                 </h4>
-                <p class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2">
+                <p
+                  class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2"
+                >
                   Upaya pengurangan emisi karbon dapat dimulai dari angkutan
                   logistik. Peran...
                 </p>
@@ -703,10 +977,14 @@
               />
               <div class="flex-1">
                 <p class="text-xs text-gray-500">Kamis, 5 Juni 2024</p>
-                <h4 class="text-sm sm:text-lg md:text-xl font-semibold leading-snug">
+                <h4
+                  class="text-sm sm:text-lg md:text-xl font-semibold leading-snug"
+                >
                   RI dan Inggris perkuat kolaborasi transportasi rendah emisi
                 </h4>
-                <p class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2">
+                <p
+                  class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2"
+                >
                   Kementerian Perhubungan Republik...
                 </p>
               </div>
@@ -717,198 +995,174 @@
     </section>
 
     <!-- Latest Section -->
-     <section class="pt-4 sm:pt-8 pb-8 sm:pb-16">
-        <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
-            <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Latest Articles</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">   
-                <div class="flex flex-col gap-3 w-full">
-                <img
-                    src="./image/image.png"
-                    class="rounded-md h-48 sm:h-56 object-cover"
-                    alt="Thumb"
-                />
-                <div>
-                    <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                    <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                    Isu Emisi Karbon Tenggelam
-                    </h4>
-                    <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                    Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                    the...
-                    </p>
-                </div>
-                </div>
-                <div class="flex flex-col gap-3 w-full">
-                <img
-                    src="./image/image-5.png"
-                    class="rounded-md h-48 sm:h-56 object-cover"
-                    alt="Thumb"
-                />
-                <div>
-                    <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                    <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                    Isu Emisi Karbon Tenggelam
-                    </h4>
-                    <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                    Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                    the...
-                    </p>
-                </div>
-                </div>
-                <div class="flex flex-col gap-3 w-full">
-                <img
-                    src="./image/image-1.png"
-                    class="rounded-md h-48 sm:h-56 object-cover"
-                    alt="Thumb"
-                />
-                <div>
-                    <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                    <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                    Isu Emisi Karbon Tenggelam
-                    </h4>
-                    <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                    Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                    the...
-                    </p>
-                </div>
-                </div>
-                <div class="flex flex-col gap-3 w-full">
-              <img
-                src="./image/image-2.png"
-                class="rounded-md h-48 sm:h-56 object-cover"
-                alt="Thumb"
-              />
-              <div>
-                <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                  Isu Emisi Karbon Tenggelam
-                </h4>
-                <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                  Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                  the...
-                </p>
-              </div>
-                </div>
-                <div class="flex flex-col gap-3 w-full">
-              <img
-                src="./image/image-3.png"
-                class="rounded-md h-48 sm:h-56 object-cover"
-                alt="Thumb"
-              />
-              <div>
-                <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                  Isu Emisi Karbon Tenggelam
-                </h4>
-                <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                  Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                  the...
-                </p>
-              </div>
-                </div>
-                <div class="flex flex-col gap-3 w-full">
-              <img
-                src="./image/image-4.png"
-                class="rounded-md h-48 sm:h-56 object-cover"
-                alt="Thumb"
-              />
-              <div>
-                <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-                <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                  Isu Emisi Karbon Tenggelam
-                </h4>
-                <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                  Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                  the...
-                </p>
-              </div>
-                </div>
-            </div>
-        </div>
-     </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 sm:py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-          <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <i class="fas fa-leaf text-green-500 text-lg sm:text-xl"></i>
-              <span class="text-base sm:text-lg font-semibold">EcoSite</span>
-            </div>
-            <p class="text-gray-400 text-xs sm:text-sm">
-              Platform edukasi lingkungan untuk masa depan yang lebih hijau dan
-              berkelanjutan.
-            </p>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4 text-sm sm:text-base">Navigasi</h4>
-            <ul class="space-y-2 text-xs sm:text-sm">
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white">Beranda</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
-                  >Tentang Kami</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white">Artikel</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white">Kontak</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4 text-sm sm:text-base">Kategori</h4>
-            <ul class="space-y-2 text-xs sm:text-sm">
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
-                  >Transportasi</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
-                  >Energi Terbarukan</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
-                  >Konservasi</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
-                  >Tips Hijau</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4 text-sm sm:text-base">Ikuti Kami</h4>
-            <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white">
-                <i class="fab fa-facebook text-lg sm:text-xl"></i>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-white">
-                <i class="fab fa-twitter text-lg sm:text-xl"></i>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-white">
-                <i class="fab fa-instagram text-lg sm:text-xl"></i>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-white">
-                <i class="fab fa-youtube text-lg sm:text-xl"></i>
-              </a>
+    <section class="pt-4 sm:pt-8 pb-8 sm:pb-16">
+      <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">
+          Latest Articles
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+        >
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="./image/image.png"
+              class="rounded-md h-48 sm:h-56 object-cover"
+              alt="Thumb"
+            />
+            <div>
+              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
+                Isu Emisi Karbon Tenggelam
+              </h4>
+              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
+                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                the...
+              </p>
             </div>
           </div>
-        </div>
-        <div class="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
-          <p class="text-gray-400 text-xs sm:text-sm">
-            © 2025 EcoSite. Semua hak dilindungi.
-          </p>
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="./image/image-5.png"
+              class="rounded-md h-48 sm:h-56 object-cover"
+              alt="Thumb"
+            />
+            <div>
+              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
+                Isu Emisi Karbon Tenggelam
+              </h4>
+              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
+                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                the...
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="./image/image-1.png"
+              class="rounded-md h-48 sm:h-56 object-cover"
+              alt="Thumb"
+            />
+            <div>
+              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
+                Isu Emisi Karbon Tenggelam
+              </h4>
+              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
+                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                the...
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="./image/image-2.png"
+              class="rounded-md h-48 sm:h-56 object-cover"
+              alt="Thumb"
+            />
+            <div>
+              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
+                Isu Emisi Karbon Tenggelam
+              </h4>
+              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
+                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                the...
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="./image/image-3.png"
+              class="rounded-md h-48 sm:h-56 object-cover"
+              alt="Thumb"
+            />
+            <div>
+              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
+                Isu Emisi Karbon Tenggelam
+              </h4>
+              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
+                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                the...
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
+            <img
+              src="./image/image-4.png"
+              class="rounded-md h-48 sm:h-56 object-cover"
+              alt="Thumb"
+            />
+            <div>
+              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
+              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
+                Isu Emisi Karbon Tenggelam
+              </h4>
+              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
+                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
+                the...
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-white py-8 sm:py-12">
+        <div class="container max-w-6xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8">
+                <div class="w-full lg:w-[65%]">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-leaf text-green-300 text-lg sm:text-xl"></i>
+                        <span class="text-xl sm:text-2xl lg:text-4xl font-semibold">Natura</span>
+                    </div>
+                    <p class="text-sm sm:text-base lg:text-sm mb-6 leading-relaxed">
+                        Lewat Natura, kita bangun masa depan yang lebih hijau, satu aksi kecil setiap hari.<br class="hidden sm:block">
+                        Setiap langkah kecil kita untuk lingkungan adalah harapan besar bagi generasi mendatang.
+                    </p>
+                </div>
+                
+                <div class="w-full lg:w-[35%] flex flex-col items-start">
+                    <h4 class="font-semibold mb-4 text-base sm:text-lg lg:text-base">ABOUT WEBSITE</h4>
+                    <p class="mb-4 text-sm sm:text-base lg:text-sm leading-relaxed">
+                        Kami adalah pengembang website dari SMK Negeri Mandiri 26 Jakarta yang mengikuti perlomba Invenntion25
+                    </p>
+
+                    <div class="flex space-x-3 sm:space-x-4">
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./image/Group 67.png" alt="Social Media">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./image/Group 66.png" alt="Social Media">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./image/Group 65.png" alt="Social Media">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./image/Group 64.png" alt="Social Media">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white mt-8 w-full sm:w-[30%] rounded-full p-1 flex items-center">
+                        <input 
+                            type="text" 
+                            placeholder="Berikan Saran Kamu" 
+                            class="flex-1 bg-transparent px-3 sm:px-4 py-1 text-gray-700 placeholder-gray-400 focus:outline-none text-xs"
+                        />
+                        <button class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-white font-medium px-3 sm:px-6 py-1 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-300 ml-1 text-xs whitespace-nowrap">
+                            Kirim
+                        </button>
+                    </div>
+            
+            <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 lg:pt-8 border-t border-white/20 text-center lg:text-right">
+                <p class="text-xs sm:text-sm opacity-90">
+                    Copyright © 2025 Raw a Man Gun. All rights reserved.
+                </p>
+            </div>
+        </div>
     </footer>
 
     <script src="toggle.js"></script>
