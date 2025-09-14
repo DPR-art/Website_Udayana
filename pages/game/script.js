@@ -1,14 +1,14 @@
 const icons = [
-  "./../image/Game/bus-01.png",
-  "./../image/Game/CO2-01.png",
-  "./../image/Game/daun-01.png",
-  "./../image/Game/kereta2-01.png",
-  "./../image/Game/lampu3-01.png",
-  "./../image/Game/mobil2-01.png",
-  "./../image/Game/motor2-01.png",
-  "./../image/Game/pohon-01.png",
-  "./../image/Game/sayuran3-01.png",
-  "./../image/Game/sepeda2-01.png"
+  "./../../image/game/bus-01.png",
+  "./../../image/game/CO2-01.png",
+  "./../../image/game/daun-01.png",
+  "./../../image/game/kereta2-01.png",
+  "./../../image/game/lampu3-01.png",
+  "./../../image/game/mobil2-01.png",
+  "./../../image/game/motor2-01.png",
+  "./../../image/game/pohon-01.png",
+  "./../../image/game/sayuran3-01.png",
+  "./../../image/game/sepeda2-01.png"
 ];
 
 let cardIcons = [...icons, ...icons];
@@ -27,7 +27,7 @@ cardIcons.forEach(icon => {
   card.className = "bg-green-100 border border-[#55C500] rounded-lg h-16 w-16 sm:h-20 sm:w-20 flex items-center justify-center cursor-pointer select-none shadow-inner";
   card.dataset.icon = icon;
   card.innerHTML = `
-    <img src="./../image/Game/ask_.png" class="back h-12 sm:h-16">
+    <img src="./../../image/game/ask_.png" class="back h-12 sm:h-16">
     <img src="${icon}" class="front h-12 w-12 sm:h-16 sm:w-16 hidden">
   `;
 

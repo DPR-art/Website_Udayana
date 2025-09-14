@@ -6,6 +6,6 @@ html, body {
 }
 
 .bg-image {
-    background-image: url(./../image/Calculator/MacBook\ Pro\ 16_\ -\ 6\ \(2\).png);
+    background-image: url(./../../image/calculator/MacBook\ Pro\ 16_\ -\ 6\ \(2\).png);
     background-size: cover;
 }

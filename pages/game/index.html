@@ -10,20 +10,33 @@
     href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
     rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body
-    class="min-h-screen flex flex-col items-center justify-start pt-32 relative"
-  >
+  <body>
+  <header class="flex justify-between">
+    <a href="./../../index.html" class="flex items-center gap-2 pl-8 pt-4"><i class="fa-solid fa-arrow-left text-white font-semibold text-[18px]"></i><p class="text-white font-semibold text-[18px]">Kembali</p></a>
+    <a href="./../../index.html" class="flex items-center pr-8 pt-4 space-x-2">
+          <img class="h-10 mb-2" src="./../../image/Untitled-1-01.png" alt="">
+          <span class="text-lg sm:text-xl font-semibold text-white"
+            >Natura</span
+          >
+        </a>
+    </header>
+
+  <section class="min-h-screen flex flex-col items-center justify-start pt-24 relative">
     <img
-      src="./../image/Game/Untitled-2-01 1 (1).png"
+      src="./../../image/game/Untitled-2-01 1 (1).png"
       class="absolute -bottom-12 -left-6 h-56 sm:h-72"
       alt=""
     />
     <img
-      src="./../image/Game/Untitled-2-01 1 (1).png"
+      src="./../../image/game/Untitled-2-01 1 (1).png"
       class="absolute -bottom-12 scale-x-[-1] -right-6 h-56 sm:h-72"
       alt=""
     />
@@ -45,10 +58,11 @@
       </p>
       <a href="./game.html"
         ><img
-          src="./../image/Game/Group 48095600.png"
+          src="./../../image/game/Group 48095600.png"
           class="w-64 mt-12 cursor-pointer hover:opacity-80 hover:scale-105 transition duration-300"
           alt=""
       /></a>
     </div>
+  </section>
   </body>
 </html>
