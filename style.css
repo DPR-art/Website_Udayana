@@ -59,26 +59,98 @@ body {
 }
 
 .dot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: green;
+  width: 15px;
+  height: 15px;
+  background-color: #D41515;
   border-radius: 50%;
   opacity: 0.7;
   animation: pulse 2s infinite;
 }
 
+.union {
+  position: absolute;
+  display: flex;
+  transform: translateY(100%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in 0.2s;
+  top: 30px;
+  text-align: center;
+  width: 100px;
+}
+
+.union h1{
+  position: relative;
+  margin-top: 10px;
+  font-size: 10px;
+  z-index: 10;
+  font-weight: bold;
+  color: #556820;
+}
+
+.union p{
+  position: relative;
+  font-size: 8px;
+  z-index: 10;
+  color: #556820;
+}
+
+.union img{
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
 .jakarta {
-  top: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 82%;
   left: 27%;
 }
-.bekasi {
-  top: 82%;
-  left: 28%;
+.bogor {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 84%;
+  left: 26%;
 }
-.bandung {
-  top: 60%;
-  left: 40%;
+.bali {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 90%;
+  left: 42%;
+}
+.makasar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 73%;
+  left: 50%;
+}
+.pekanbaru {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  left: 17%;
+}
+.medan {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 36%;
+  left: 12%;
 }
 
 @keyframes pulse {
@@ -87,11 +159,44 @@ body {
     opacity: 0.7;
   }
   50% {
-    transform: scale(1.4);
+    transform: scale(1.2);
     opacity: 0.4;
   }
   100% {
     transform: scale(1);
     opacity: 0.7;
   }
+}
+
+@media (max-width: 640px) {
+  .dot{
+    width: 5px;
+    height: 5px;
+  }
+
+  .union {
+  top: 10px;
+  width: 50px;
+}
+
+.union h1{
+  position: relative;
+  margin-top: 5px;
+  font-size: 5px;
+}
+
+.union p{
+  position: relative;
+  font-size: 4px;
+  z-index: 10;
+  color: #556820;
+}
+
+.union img{
+  z-index: 1;
+  width: 100%;
+  height: 30px;
+  transform: rotate(180deg);
+  position: absolute;
+}
 }
