@@ -19,7 +19,7 @@
     />
   </head>
   <body class="bg-white">
-    <!-- Header Section -->
+
     <header class="bg-white shadow-sm relative z-50">
       <div
         class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
@@ -31,8 +31,8 @@
           >
         </div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-8">
+    
+        <nav class="hidden md:flex md:space-x-4 lg:space-x-8">
           <a
             href="#beranda"
             class="text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid transition-colors duration-200"
@@ -65,7 +65,7 @@
           >
         </nav>
 
-        <!-- Hamburger Button -->
+    
         <button
           id="hamburgerBtn"
           class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
@@ -78,22 +78,22 @@
         </button>
       </div>
 
-      <!-- Mobile Menu -->
+  
       <div
         id="mobileMenu"
         class="fixed inset-0 top-[73px] z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
       >
-        <!-- Backdrop -->
+    
         <div class="menu-backdrop absolute inset-0" id="menuBackdrop"></div>
 
-        <!-- Menu Content -->
+    
         <div
           class="absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-white shadow-2xl"
         >
           <nav class="p-6 pt-8">
             <div class="space-y-1">
               <a
-                href="#"
+                href="#beranda"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -102,7 +102,7 @@
                 <span class="font-medium">Beranda</span>
               </a>
               <a
-                href="#"
+                href="#tentang"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -111,7 +111,7 @@
                 <span class="font-medium">Tentang Kami</span>
               </a>
               <a
-                href="#"
+                href="./pages/calculator/index.html"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -120,7 +120,7 @@
                 <span class="font-medium">Kalkulator</span>
               </a>
               <a
-                href="#"
+                href="./pages/ai/index.html"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -129,7 +129,7 @@
                 <span class="font-medium">Chatbot</span>
               </a>
               <a
-                href="#"
+                href="./pages/game/index.html"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -138,7 +138,7 @@
                 <span class="font-medium">Permainan</span>
               </a>
               <a
-                href="#"
+                href="#berita"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -147,8 +147,7 @@
                 <span class="font-medium">Berita</span>
               </a>
             </div>
-
-            <!-- Social Media -->
+        
             <div class="mt-8 pt-6 border-t border-gray-200">
               <p class="text-sm text-gray-500 mb-4">Ikuti Kami</p>
               <div class="flex space-x-4">
@@ -181,7 +180,7 @@
       <div class="container relative max-w-6xl px-4 sm:px-12 mx-auto">
           <img src="./image/Peta.png" class="map-image" alt="Peta Indonesia" />
 
-          <!-- Titik emisi -->
+      
           <div class="jakarta">
             <div class="union opacity-0">
               <img src="./image/Union.png">
@@ -233,7 +232,7 @@
       </div>
     </section>
 
-    <section class="py-8 sm:py-16">
+    <section id="tentang" class="py-8 sm:py-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
         <div class="flex flex-col lg:flex-row items-center gap-4 sm:gap-8">
           <div class="w-full lg:w-1/2 flex justify-center order-1">
@@ -264,7 +263,7 @@
               Hasil hitunganya bisa dilihat langsung. Kamu juga bisa bandingin
               emisi kamu dengan rata-rata orang Indonesia, ASEAN, Global, atau
               bahkan dengan teman kamu yang juga mencoba kalkulator
-              jejakkarbonku.id
+              Natura
             </p>
             <a href="./pages/calculator/index.html">
               <button
@@ -278,8 +277,8 @@
       </div>
     </section>
 
-    <!-- Green Cards Section -->
-    <section id="tentang" class="pt-8 sm:pt-16">
+
+    <section class="pt-8 sm:pt-16">
       <div class="relative">
         <div class="relative z-10 mx-auto">
           <div
@@ -288,13 +287,14 @@
             <div
               class="w-full hover:scale-[1.02] z-30 transition duration-300 flex items-center md:items-start md:w-1/2 h-[60vw] sm:h-[50vw] md:h-[37vw] rounded-lg bg-cover bg-no-repeat bg-[url(./image/Gradient.png)] flex justify-center"
             >
-              <h1
-                class="text-xl sm:text-2xl lg:text-4xl text-white pt-0 align-middle md:pt-16 w-[80%] sm:w-[70%] text-left lg:leading-[1.3]"
-              >
-                Namun, <br /><span class="font-semibold">
-                  Mengapa Polusi Udara Indonesia Sangat Tinggi?</span
-                >
-              </h1>
+              <div class="text-left w-[80%] h-full pt-0 align-middle flex flex-col justify-center md:justify-start md:pt-16 lg:pt-20 sm:w-[75%]">
+                <p class="text-sm sm:text-xl lg:text-2xl text-white">
+                  Tahukah Kamu?
+                </p>
+                <h1 class="font-semibold text-xl sm:text-[30px] lg:text-[36px] text-white leading-[1.4]">
+                  Mengapa Polusi Udara di Indonesia Sangat Tinggi?
+                </h1>
+              </div>
             </div>
             <div
               class="w-full md:w-1/2 h-[120vw] sm:h-[50vw] md:h-[37vw] flex flex-col justify-between gap-2 sm:gap-6"
@@ -306,13 +306,13 @@
                   class="w-full h-1/2 hover:scale-[1.02] transition duration-300 sm:h-full sm:w-1/2 rounded-lg flex items-center justify-center md:justify-start bg-cover bg-no-repeat bg-[url(./image/Gradient2.png)]"
                 >
                   <div
-                    class="flex text-white flex-col  sm:gap-2 pl-4 sm:pl-4 py-4 sm:pt-8 lg:pt-8 md:h-full w-[90%] sm:w-[80%]"
+                    class="flex text-white flex-col sm:gap-2 pl-4 sm:pl-4 py-4 sm:pt-8 lg:pt-8 md:h-full w-[90%] sm:w-[80%]"
                   >
                     <p class="text-sm sm:text-md lg:text-xl">
                       Penyebab utama polusi udara yaitu
                     </p>
                     <p
-                      class="text-2xl pt-1 sm:text-3xl lg:text-5xl font-bold leading-none"
+                      class="text-xl pt-1 lg:text-5xl font-bold leading-none"
                     >
                       EMISI GAS
                     </p>
@@ -331,7 +331,7 @@
                     <p class="text-sm sm:text-md lg:text-xl">
                       Sektor pendukung polusi udara yaitu
                     </p>
-                    <p class="text-2xl pt-1 lg:text-3xl font-bold leading-none">
+                    <p class="text-xl pt-1 sm:text-2xl lg:text-3xl font-bold leading-none">
                       PEMBAKARAN SAMPAH
                     </p>
                     <p class="text-sm pt-1 sm:text-md lg:text-xl">
@@ -496,7 +496,7 @@
       </div>
     </section>
 
-    <!-- Statistics Section -->
+
     <section class="py-8 sm:py-16">
       <div
         class="container max-w-6xl px-4 sm:px-12 flex flex-col md:flex-row justify-around mx-auto gap-8"
@@ -649,18 +649,18 @@
       </div>
     </section>
 
-    <!-- Game Section -->
+
     <section
       class="py-8 sm:py-16 relative h-[100vh] sm:h-[150vh] sm:mt-52 flex items-center justify-center"
     >
-      <!-- Background Image -->
+  
       <img
         src="./image/Group 48095607 (4).png"
         class="absolute w-full h-[90vh] mt-40 sm:mt-32 md:h-[230vh]"
         alt=""
       />
 
-      <!-- Content -->
+  
       <div
         class="relative z-10 container max-w-6xl px-4 sm:px-12 mb-4 sm:mb-40 text-center justify-center flex flex-col h-full items-center"
       >
@@ -743,7 +743,7 @@
         class="w-full flex justify-center sm:px-16 container max-w-6xl mx-auto"
       >
         <div class="px-8 w-full py-8 bg-white rounded-lg sm:shadow-lg z-10">
-          <!-- Header with Legend -->
+      
           <div class="mb-16 flex justify-between items-start">
             <div>
               <h1 class="text-xl font-semibold text-gray-800">
@@ -756,9 +756,9 @@
             </div>
           </div>
 
-          <!-- Chart Container -->
+      
           <div class="relative">
-            <!-- Y-axis labels -->
+        
             <div
               class="absolute left-0 -top-8 h-80 flex flex-col-reverse justify-between text-xs text-gray-500 pr-4 pt-2 gap-4"
             >
@@ -767,9 +767,9 @@
               ><span>40</span><span>45</span><span>50</span>
             </div>
 
-            <!-- Chart area -->
+        
             <div class="ml-8 relative">
-              <!-- Grid lines -->
+          
               <div class="absolute -inset-8 flex flex-col justify-between h-80">
                 <div class="border-t border-gray-200"></div>
                 <div class="border-t border-gray-200"></div>
@@ -783,20 +783,20 @@
                 <div class="border-t border-gray-200"></div>
                 <div class="border-t border-gray-200"></div>
               </div>
-              <!-- Bars container (dynamic) -->
+          
               <div
                 id="bar-container"
                 class="flex items-end justify-between h-80 relative z-10 px-4"
               ></div>
 
-              <!-- Time period indicator -->
+          
               <div class="flex justify-center mt-6">
                 <span class="text-xs text-gray-500">2018 - 2022</span>
               </div>
             </div>
           </div>
 
-          <!-- Sector buttons -->
+      
           <div class="mt-12 flex flex-wrap justify-center gap-3">
             <button
               class="sector-btn bg-green-100 text-green-700 px-4 py-2 rounded-lg text-sm sm:text-lg font-medium border border-green-300 hover:bg-green-200 transition-colors"
@@ -839,7 +839,7 @@
             </button>
           </div>
 
-          <!-- Summary stats -->
+      
           <div class="mt-8 bg-gray-50 p-6 rounded-lg">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
               <div>
@@ -874,7 +874,7 @@
       </div>
     </section>
 
-    <!-- Card Section -->
+
     <section class="py-8 sm:py-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
         <div class="flex flex-col lg:flex-row items-center gap-8">
@@ -952,107 +952,109 @@
       </div>
     </section>
 
-    <!-- Popular Articles -->
+
     <section id="berita" class="py-8 sm:py-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto relative z-20">
         <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">
           Popular Articles
         </h2>
         <div class="flex flex-col md:flex-row w-full gap-6 sm:gap-8">
-          <!-- Main Article -->
-          <div class="flex flex-col w-full md:w-1/2">
+          <a href="https://indonesia.go.id/kategori/editorial/8789/butuh-dukungan-kolektif-turunkan-emisi-karbon?lang=1" class="flex flex-col w-full md:w-1/2">
             <img
               src="./image/image(2).png"
               alt="Main"
               class="rounded-lg mb-4 w-full h-48 sm:h-64 md:h-auto object-cover"
             />
+            <!-- https://indonesia.go.id/kategori/editorial/8789/butuh-dukungan-kolektif-turunkan-emisi-karbon?lang=1 -->
             <p class="text-xs sm:text-sm text-gray-500 mb-1">
               Selasa, 26 November 2025
             </p>
-            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-1">
+            <h3 class="text-md sm:text-lg font-semibold text-gray-900 mb-1">
               Butuh Dukungan Kolektif Turunkan Emisi Karbon
             </h3>
-            <p class="text-sm sm:text-lg text-gray-700">
+            <p class="text-sm sm:text-md text-gray-700">
               Indonesia telah berhasil menurunkan emisi karbon bahan bakar fosil
               menjadi 733,2 juta ton pada 2023.
             </p>
-          </div>
+          </a>
 
-          <!-- Side Articles -->
+      
           <div class="flex flex-col gap-4 sm:gap-6 w-full md:w-1/2">
-            <!-- Article 1 -->
-            <div class="flex gap-3 w-full">
+            <a href="https://lestari.kompas.com/read/2025/06/20/164909786/isu-emisi-karbon-tenggelam?page=all
+" class="flex gap-3 w-full">
               <img
                 src="./image/image(3).png"
                 class="rounded-md w-24 sm:w-32 md:w-40 h-20 sm:h-24 md:h-full object-cover flex-shrink-0"
                 alt="Thumb"
               />
+              <!-- https://lestari.kompas.com/read/2025/06/20/164909786/isu-emisi-karbon-tenggelam?page=all -->
               <div class="flex-1">
                 <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
                 <h4
-                  class="text-sm sm:text-lg md:text-xl font-semibold leading-snug"
+                  class="text-md sm:text-lg font-semibold leading-snug"
                 >
                   Isu Emisi Karbon Tenggelam
                 </h4>
                 <p
-                  class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2"
+                  class="text-sm sm:text-md text-justify text-gray-600 line-clamp-2"
                 >
                   Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
                   the...
                 </p>
               </div>
-            </div>
+            </a>
 
-            <!-- Article 2 -->
-            <div class="flex gap-3">
+        
+            <a href="https://www.tempo.co/kolom/dekarbonisasi-transportasi-logistik-1229386" class="flex gap-3">
               <img
                 src="./image/image(4).png"
                 class="rounded-md w-24 sm:w-32 md:w-40 h-20 sm:h-24 md:h-full object-cover flex-shrink-0"
                 alt="Thumb"
               />
+              <!-- https://www.tempo.co/kolom/dekarbonisasi-transportasi-logistik-1229386 -->
               <div class="flex-1">
                 <p class="text-xs text-gray-500">Kamis, 10 April 2025</p>
                 <h4
-                  class="text-sm sm:text-lg md:text-xl font-semibold leading-snug"
+                  class="text-md sm:text-lg font-semibold leading-snug"
                 >
                   Pentingnya Dekarbonisasi Angkutan Barang
                 </h4>
                 <p
-                  class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2"
+                  class="text-sm sm:text-md text-justify text-gray-600 line-clamp-2"
                 >
                   Upaya pengurangan emisi karbon dapat dimulai dari angkutan
                   logistik. Peran...
                 </p>
               </div>
-            </div>
-
-            <!-- Article 3 -->
-            <div class="flex gap-3">
+            </a>
+        
+            <a href="https://www.antaranews.com/berita/4879749/ri-dan-inggris-perkuat-kolaborasi-transportasi-rendah-emisi" class="flex gap-3">
               <img
                 src="./image/image(5).png"
                 class="rounded-md w-24 sm:w-32 md:w-40 h-20 sm:h-24 md:h-full object-cover flex-shrink-0"
                 alt="Thumb"
               />
+              <!-- https://www.antaranews.com/berita/4879749/ri-dan-inggris-perkuat-kolaborasi-transportasi-rendah-emisi  -->
               <div class="flex-1">
                 <p class="text-xs text-gray-500">Kamis, 5 Juni 2024</p>
                 <h4
-                  class="text-sm sm:text-lg md:text-xl font-semibold leading-snug"
+                  class="text-md sm:text-lg font-semibold leading-snug"
                 >
                   RI dan Inggris perkuat kolaborasi transportasi rendah emisi
                 </h4>
                 <p
-                  class="text-xs sm:text-sm text-justify md:text-lg text-gray-600 line-clamp-2"
+                  class="text-sm sm:text-md text-justify text-gray-600 line-clamp-2"
                 >
                   Kementerian Perhubungan Republik...
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Latest Section -->
+
     <section class="pt-4 sm:pt-8 pb-8 sm:pb-16">
       <div class="container max-w-6xl px-4 sm:px-12 mx-auto">
         <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">
@@ -1061,111 +1063,118 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
-          <div class="flex flex-col gap-3 w-full">
+          <a href="https://www.antaranews.com/berita/4464445/emisi-karbon-global-capai-rekor-tertinggi-ri-tunjukkan-tren-penurunan" class="flex flex-col gap-3 w-full">
             <img
               src="./image/image.png"
               class="rounded-md h-48 sm:h-56 object-cover"
               alt="Thumb"
             />
+            <!-- https://www.antaranews.com/berita/4464445/emisi-karbon-global-capai-rekor-tertinggi-ri-tunjukkan-tren-penurunan -->
             <div>
-              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                Isu Emisi Karbon Tenggelam
+              <p class="text-xs text-gray-500">Rabu, 13 November 2024</p>
+              <h4 class="text-sm sm:text-md font-semibold leading-snug">
+                Emisi karbon global capai rekor tertinggi, RI tunjukkan tren penurunan
               </h4>
-              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                the...
+              <p class="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                Global Carbon Budget melaporkan emisi karbon dari bahan bakar fosil diperkirakan mencapai rekor tertinggi pada 2024. :contentReference[oaicite:0]{index=0}
               </p>
             </div>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+          </a>
+
+          <a href="https://ugm.ac.id/id/berita/pengamat-ugm-target-nol-emisi-karbon-di-ikn-sulit-tercapai/" class="flex flex-col gap-3 w-full">
             <img
               src="./image/image-5.png"
               class="rounded-md h-48 sm:h-56 object-cover"
               alt="Thumb"
             />
+            <!-- https://ugm.ac.id/id/berita/pengamat-ugm-target-nol-emisi-karbon-di-ikn-sulit-tercapai/ -->
             <div>
-              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                Isu Emisi Karbon Tenggelam
+              <p class="text-xs text-gray-500">Kamis, 15 Agustus 2024</p>
+              <h4 class="text-sm sm:text-md font-semibold leading-snug">
+                Pengamat UGM: Target Nol Emisi Karbon di IKN Sulit Tercapai
               </h4>
-              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                the...
+              <p class="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                Pembangunan IKN dari awal didesain ramah lingkungan, namun pengamat menilai banyak faktor seperti kesiapan energi dan kendaraan bermotor yang masih berbahan bakar fosil membuat target nol emisi sulit tercapai. :contentReference[oaicite:1]{index=1}
               </p>
             </div>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+          </a>
+
+          <a href="https://betahita.id/news/detail/9605/indonesia-masuk-10-besar-penghasil-emisi-karbon-dunia.html?v=1701812357" class="flex flex-col gap-3 w-full">
             <img
               src="./image/image-1.png"
               class="rounded-md h-48 sm:h-56 object-cover"
               alt="Thumb"
             />
+            <!-- https://betahita.id/news/detail/9605/indonesia-masuk-10-besar-penghasil-emisi-karbon-dunia.html?v=1701812357 -->
             <div>
-              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                Isu Emisi Karbon Tenggelam
+              <p class="text-xs text-gray-500">Rabu, 06 Desember 2023</p>
+              <h4 class="text-sm sm:text-md font-semibold leading-snug">
+                Indonesia Masuk 10 Besar Penghasil Emisi Karbon Dunia
               </h4>
-              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                the...
+              <p class="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                Laporan Global Carbon Project menyebut Indonesia jadi salah satu dari sepuluh negara penghasil karbon terbesar pada 2022, dengan kenaikan emisi tertinggi dibanding negara lain. :contentReference[oaicite:2]{index=2}
               </p>
             </div>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+          </a>
+
+          <a href="https://www.ums.ac.id/berita/teropong-jagat/siapkah-indonesia-mewujudkan-netralitas-karbon" class="flex flex-col gap-3 w-full">
             <img
               src="./image/image-2.png"
               class="rounded-md h-48 sm:h-56 object-cover"
               alt="Thumb"
             />
+            <!-- https://www.ums.ac.id/berita/teropong-jagat/siapkah-indonesia-mewujudkan-netralitas-karbon -->
             <div>
-              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                Isu Emisi Karbon Tenggelam
+              <p class="text-xs text-gray-500">Senin, 24 Juni 2024</p>
+              <h4 class="text-sm sm:text-md font-semibold leading-snug">
+                Siapkah Indonesia Mewujudkan Netralitas Karbon?
               </h4>
-              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                the...
+              <p class="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                Artikel membahas tantangan dan potensi Indonesia dalam mencapai netralitas karbon di masa depan. <!-- sumber tanggal perlu dicek -->
               </p>
             </div>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+          </a>
+
+          <a href="https://otomotif.antaranews.com/berita/3369039/transportasi-massal-solusi-tekan-emisi-karbon" class="flex flex-col gap-3 w-full">
             <img
               src="./image/image-3.png"
               class="rounded-md h-48 sm:h-56 object-cover"
               alt="Thumb"
             />
+            <!-- https://otomotif.antaranews.com/berita/3369039/transportasi-massal-solusi-tekan-emisi-karbon -->
             <div>
-              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                Isu Emisi Karbon Tenggelam
+              <p class="text-xs text-gray-500">Sabtu, 28 Januari 2023</p>
+              <h4 class="text-sm sm:text-md font-semibold leading-snug">
+                Transportasi massal solusi tekan emisi karbon
               </h4>
-              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                the...
+              <p class="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                Disampaikan bahwa sektor transportasi pribadi selama ini menyumbang emisi besar, dan solusi seperti angkutan umum dan moda ramah lingkungan dapat membantu menguranginya. :contentReference[oaicite:3]{index=3}
               </p>
             </div>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+          </a>
+
+          <a href="https://unair.ac.id/analisis-pengungkapan-emisi-karbon-perusahaan-indonesia/" class="flex flex-col gap-3 w-full">
             <img
               src="./image/image-4.png"
               class="rounded-md h-48 sm:h-56 object-cover"
               alt="Thumb"
             />
+            <!-- https://unair.ac.id/analisis-pengungkapan-emisi-karbon-perusahaan-indonesia/ -->
             <div>
-              <p class="text-xs text-gray-500">Jumat, 6 Juli 2025</p>
-              <h4 class="text-lg sm:text-xl font-semibold leading-snug">
-                Isu Emisi Karbon Tenggelam
+              <p class="text-xs text-gray-500">Kamis, 16 Mei 2024</p>
+              <h4 class="text-sm sm:text-md font-semibold leading-snug">
+                Analisis Pengungkapan Emisi Karbon Perusahaan Indonesia
               </h4>
-              <p class="text-sm sm:text-lg text-gray-600 line-clamp-2">
-                Target NDC Indonesia dalam Konferensi Para Pihak/Conference of
-                the...
+              <p class="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                Kajian tentang bagaimana perusahaan di Indonesia melaporkan dan mengungkap emisi karbon yang mereka hasilkan. <!-- sumber tanggal perlu dicek -->
               </p>
             </div>
-          </div>
+          </a>
+
         </div>
       </div>
     </section>
+
 
     <section class="py-16">
       <div class="container max-w-6xl px-4 sm:px-12 flex flex-col items-center gap-[30px] mx-auto">
@@ -1277,8 +1286,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
-   <footer class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-white py-8 sm:py-12">
+  <footer class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-white py-8 sm:py-12">
         <div class="container max-w-6xl mx-auto px-4">
             <div class="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8">
                 <div class="w-full lg:w-[65%]">
@@ -1294,7 +1302,7 @@
                 <div class="w-full lg:w-[35%] flex flex-col items-start">
                     <h4 class="font-semibold mb-4 text-base sm:text-lg lg:text-base">ABOUT WEBSITE</h4>
                     <p class="mb-4 text-sm sm:text-base lg:text-sm leading-relaxed">
-                        Kami adalah pengembang website dari SMK Negeri Mandiri 26 Jakarta yang mengikuti perlomba Invenntion25
+                        Kami adalah pengembang website dari SMK Negeri Mandiri 26 Jakarta yang mengikuti perlombaan Invention 2025
                     </p>
                     <div class="flex space-x-3 sm:space-x-4">
                         <a href="#" class="hover:scale-110 transition-transform duration-200">

@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="bg-white shadow-sm relative z-50">
@@ -88,7 +92,7 @@
           <nav class="p-6 pt-8">
             <div class="space-y-1">
               <a
-                href="#"
+                href="./../../index.html#beranda"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -97,7 +101,7 @@
                 <span class="font-medium">Beranda</span>
               </a>
               <a
-                href="#"
+                href="./../../index.html#tentang"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -115,7 +119,7 @@
                 <span class="font-medium">Kalkulator</span>
               </a>
               <a
-                href="#"
+                href="./../ai/index.html"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -124,7 +128,7 @@
                 <span class="font-medium">Chatbot</span>
               </a>
               <a
-                href="#"
+                href="./../game/index.html"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -133,7 +137,7 @@
                 <span class="font-medium">Permainan</span>
               </a>
               <a
-                href="#"
+                href="./../../index.html#berita"
                 class="menu-item gap-2 flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group"
               >
                 <i
@@ -142,40 +146,25 @@
                 <span class="font-medium">Berita</span>
               </a>
             </div>
-
-            <!-- Additional Menu Items -->
-            <!-- <div class="mt-8 pt-6 border-t border-gray-200">
-                        <div class="space-y-1">
-                            <a href="#" class="menu-item flex items-center px-4 py-3 text-[#98CD00] hover:text-[#6CDB00] hover:underline-offset-4 hover:font-bold hover:underline hover:decoration-solid rounded-lg transition-all duration-200 group">
-                                <i class="fas fa-user mr-3 text-gray-400 group-hover:text-green-500"></i>
-                                <span class="font-medium">Profil</span>
-                            </a>
-                            <a href="#" class="menu-item flex items-center px-4 py-3 text-gray-700 hover:text-green-500 hover:bg-green-50 rounded-lg transition-all duration-200 group">
-                                <i class="fas fa-cog mr-3 text-gray-400 group-hover:text-green-500"></i>
-                                <span class="font-medium">Pengaturan</span>
-                            </a>
-                        </div>
-                    </div> -->
-
-            <!-- Social Media -->
+        
             <div class="mt-8 pt-6 border-t border-gray-200">
               <p class="text-sm text-gray-500 mb-4">Ikuti Kami</p>
               <div class="flex space-x-4">
                 <a
                   href="#"
-                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200"
+                  class="w-10 h-10 rounded-lg flex items-center justify-center text-white bg-[#98CD00] hover bg-[#6CDB00] transition-all duration-200"
                 >
                   <i class="fab fa-facebook-f"></i>
                 </a>
                 <a
                   href="#"
-                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200"
+                  class="w-10 h-10 rounded-lg flex items-center justify-center text-white bg-[#98CD00] hover bg-[#6CDB00] transition-all duration-200"
                 >
                   <i class="fab fa-twitter"></i>
                 </a>
                 <a
                   href="#"
-                  class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-500 hover:bg-green-500 hover:text-white transition-all duration-200"
+                  class="w-10 h-10 rounded-lg flex items-center justify-center text-white bg-[#98CD00] hover bg-[#6CDB00] transition-all duration-200"
                 >
                   <i class="fab fa-instagram"></i>
                 </a>
@@ -192,7 +181,7 @@
       </h1>
     </div>
 
-    <div class="flex flex-col items-center bg-image w-[95%] sm:w-4/5 pb-8 px-4">
+    <div class="flex flex-col items-center bg-image w-[95%] rounded-2xl sm:w-4/5 pb-8 px-4">
       <!-- Jenis Transportasi -->
       <h1 class="text-2xl font-bold text-white pt-8">Jenis Transportasi</h1>
       <div class="flex justify-center gap-4 pt-8 flex-wrap sm:flex-nowrap">
@@ -240,7 +229,7 @@
       </div>
 
       <!-- Tombol Hitung -->
-      <button class="text-2xl font-bold text-white py-2 px-20 bg-[#B6F500] mt-16 rounded-md hover:scale-105 transition">
+      <button id="hitung" class="text-2xl font-bold text-white py-2 px-20 bg-[#B6F500] mt-16 rounded-md hover:scale-105 transition">
         Hitung
       </button>
 
@@ -262,6 +251,58 @@
       </div>
     </div>
     </section>
+
+    <footer class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-white py-8 sm:py-12">
+        <div class="container max-w-6xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8">
+                <div class="w-full lg:w-[65%]">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img class="h-10 mb-2" src="./../../image/Untitled-1-01.png" alt="">
+                        <span class="text-xl sm:text-2xl lg:text-4xl font-semibold">Natura</span>
+                    </div>
+                    <p class="text-sm sm:text-base lg:text-sm mb-6 leading-relaxed">
+                        Lewat Natura, kita bangun masa depan yang lebih hijau, satu aksi kecil setiap hari.<br class="hidden sm:block">
+                        Setiap langkah kecil kita untuk lingkungan adalah harapan besar bagi generasi mendatang.
+                    </p>
+                </div>
+                <div class="w-full lg:w-[35%] flex flex-col items-start">
+                    <h4 class="font-semibold mb-4 text-base sm:text-lg lg:text-base">ABOUT WEBSITE</h4>
+                    <p class="mb-4 text-sm sm:text-base lg:text-sm leading-relaxed">
+                        Kami adalah pengembang website dari SMK Negeri Mandiri 26 Jakarta yang mengikuti perlombaan Invention 2025
+                    </p>
+                    <div class="flex space-x-3 sm:space-x-4">
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./../../image/Group 67.png" alt="Social Media">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./../../image/Group 66.png" alt="Social Media">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./../../image/Group 65.png" alt="Social Media">
+                        </a>
+                        <a href="#" class="hover:scale-110 transition-transform duration-200">
+                            <img class="h-6 sm:h-8" src="./../../image/Group 64.png" alt="Social Media">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white mt-8 w-full sm:w-[30%] rounded-full p-1 flex items-center">
+                <input 
+                    type="text" 
+                    placeholder="Berikan Saran Kamu" 
+                    class="flex-1 bg-transparent px-3 sm:px-4 py-1 text-gray-700 placeholder-gray-400 focus:outline-none text-xs"
+                />
+                <button class="bg-gradient-to-br from-[#87F500] via-[#55C500] to-[#239600] text-white font-medium px-3 sm:px-6 py-1 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-300 ml-1 text-xs whitespace-nowrap">
+                    Kirim
+                </button>
+            </div>
+            <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 lg:pt-8 border-t border-white/20 text-center lg:text-right">
+                <p class="text-xs sm:text-sm opacity-90">
+                    Copyright © 2025 Raw a Man Gun. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="./../../hamburger.js"></script>
     <script src="script.js" defer></script>
   </body>
