@@ -20,7 +20,7 @@ const sectorData = {
   },
   pertanian: {
     title: "Sektor Pertanian (kt) CO2",
-    subSector: 5,
+    subSector: 6,
     data: [
       { name: "Budidaya Padi", displayValue: 15, realValue: 26621.53, color: "bg-yellow-500" },
       { name: "N2O dari Tanah Dikelola", displayValue: 50, realValue: 35645.60, color: "bg-yellow-400" },
