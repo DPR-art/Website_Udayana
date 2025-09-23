@@ -77,7 +77,7 @@ const sectorData = {
     barWrapper.className = 'flex flex-col items-center w-[50px] sm:w-[100px] md:w-[120px]';
 
     const bar = document.createElement('div');
-    bar.className = `${item.color} transition-all duration-1000 ease-out relative w-full`;
+    bar.className = `${item.color} transition-all duration-1000 ease-out relative w-[80%]  lg:w-full`;
     bar.style.height = '0px';
 
     setTimeout(() => {
@@ -85,7 +85,7 @@ const sectorData = {
 
       // Tooltip value asli
       const valueLabel = document.createElement('div');
-      valueLabel.className = 'absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700 bg-white px-1 rounded';
+      valueLabel.className = 'absolute -top-6 left-1/2 transform -translate-x-1/2 text-[7px] sm:text-xs font-semibold text-gray-700 bg-white px-1 rounded';
       valueLabel.textContent = formatNumber(item.realValue);
       bar.appendChild(valueLabel);
     }, index * 200);
@@ -102,7 +102,7 @@ const sectorData = {
 
     const label = document.createElement('div');
     label.className = 'mt-4 text-center';
-    label.innerHTML = `<div class="text-xs text-gray-600 h-4 font-medium">${item.name}</div>`;
+    label.innerHTML = `<div class="text-[7px] sm:text-xs text-gray-600 h-4 font-medium">${item.name}</div>`;
 
     barWrapper.appendChild(bar);
     barWrapper.appendChild(label);
