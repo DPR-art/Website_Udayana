@@ -135,7 +135,7 @@ body {
 .chat-window .chat h1 {
   font-size: 14px;
   padding-left: 10px;
-  color: #56637e;
+  color: rgb(75, 85, 99);
   position: absolute;
   top: -20px;
   font-weight: semi-bold;
