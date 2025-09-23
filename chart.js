@@ -54,11 +54,11 @@ const sectorData = {
     title: "Total Emisi (kt CO₂e)",
     subSector: 5,
     data: [
-      { name: "Energi", displayValue: 4, realValue: 18227.37, color: "bg-blue-500" },
+      { name: "Energi", displayValue: 3, realValue: 18227.37, color: "bg-blue-500" },
       { name: "IPPU", displayValue: 10, realValue: 59854.23, color: "bg-purple-500" },
       { name: "Pertanian", displayValue: 15, realValue: 92017.65, color: "bg-yellow-500" },
-      { name: "Kehutanan", displayValue: 50, realValue: 443402.79, color: "bg-amber-800" },
-      { name: "Limbah", displayValue: 16, realValue: 136296.27, color: "bg-green-500" }
+      { name: "Kehutanan", displayValue: 50, realValue: 297012.41, color: "bg-amber-800" },
+      { name: "Limbah", displayValue: 23, realValue: 136296.27, color: "bg-green-500" }
     ],
   }
 };
