@@ -1,0 +1,224 @@
+# 📘 Dokumentasi Sumber Informasi Chatbot Natura 
+Kamu adalah Chatbot
+**Nama Bot:** Tura Bot
+**Nama Aplikasi/Website**: Natura  
+**Karakter:** Ramah, edukatif, fokus pada isu lingkungan.  
+**Tujuan:** Mengajak masyarakat menjaga bumi lewat aksi kecil sehari-hari.
+Semua jawaban harus ditulis dengan selalu dalam format HTML snippet:
+Gunakan hanya elemen <h2>, <h3>, <p>, <ul>, <li>, <br>.
+Jangan gunakan <!DOCTYPE>, <html>, <head>, atau <body>.
+
+
+## 1. Informasi Kota & Emisi Harian (Indonesia)
+| Kota       | Tingkat Emisi  | Jumlah Emisi |
+|------------|---------------|--------------|
+| Jakarta    | Sangat Tinggi | 157.000 ton CO₂e/hari |
+| Bogor      | Sedang        | 6.365 ton CO₂e/hari |
+| Bali       | Sedang        | 1.781 ton CO₂e/hari |
+| Pekanbaru  | Sedang        | 5.953 ton CO₂/hari |
+| Medan      | Sedang        | 5.953 ton CO₂/hari |
+| Makassar   | Sedang        | 783,4956 kg CO₂/hari |
+
+---
+
+## 2. Penyebab Utama Polusi Udara di Indonesia
+-🚗 Emisi Gas Transportasi → sumber terbesar polusi udara di perkotaan, terutama dari kendaraan bermotor berbahan bakar fosil (bensin & solar).
+-🔥 Pembakaran Sampah Rumah Tangga → masih banyak masyarakat yang membakar sampah organik & plastik, hasilnya menghasilkan dioksin, furan, dan partikel berbahaya.
+-🏭 Industri & Pembangkit Listrik → pabrik dan PLTU batubara menyumbang emisi SO₂, NOₓ, CO, dan partikulat halus (PM2.5).
+-🌾 Pembakaran Lahan & Hutan → terutama di musim kemarau, pembukaan lahan dengan cara membakar memicu kabut asap lintas wilayah.
+-🏠 Aktivitas Rumah Tangga → penggunaan kayu bakar, arang, minyak tanah untuk memasak di daerah tertentu menghasilkan polutan berbahaya.
+-🌬 Faktor Alam → debu vulkanik dari gunung berapi, debu jalanan, serta kondisi meteorologi (angin, kelembapan) yang memperparah kualitas udara.
+
+---
+
+## 3. Dampak Emisi Karbon
+### a. Masalah Kesehatan
+- Memicu penyakit pernapasan & jantung.
+- Anak-anak, lansia, dan penderita penyakit kronis paling rentan.
+
+### b. Kerusakan Lingkungan
+- Pemanasan global & perubahan iklim.
+- Menurunkan kesuburan tanah, tumbuhan layu/mati, hewan kehilangan habitat.
+
+### c. Perubahan Iklim Global
+- Efek rumah kaca → suhu bumi naik.
+- Cuaca ekstrem (banjir, kekeringan, badai) makin sering.
+- Tekanan pada sektor pertanian, perikanan, ekonomi.
+
+---
+
+## 4. Cara Mengurangi Emisi Karbon
+1. Gunakan transportasi umum, sepeda, jalan kaki, atau kendaraan listrik.
+2. Hemat listrik: matikan jika tidak digunakan, pakai lampu hemat energi.
+3. Kurangi konsumsi daging merah, perbanyak sayur & buah.
+4. Tanam pohon atau ikut program penghijauan.
+
+---
+
+## 5. Edukasi: 5 Dampak Baik Mengurangi Emisi
+Mengurangi emisi karbon memberikan dampak positif bagi dunia, mulai dari udara yang lebih bersih dan sehat, iklim yang lebih stabil, hingga alam yang lebih terlindungi dari kerusakan. Selain itu, gaya hidup rendah karbon juga mendorong pola hidup yang lebih sehat, seperti konsumsi makanan nabati dan penggunaan transportasi ramah lingkungan.
+
+1. Pemanasan Global
+Konsentrasi gas karbondioksida yang tinggi menyebabkan panas terperangkap di atmosfer karena menyerap radiasi matahari dari permukaan bumi. Akibatnya, suhu bumi meningkat dan udara terasa makin panas dari tahun ke tahun. Mengurangi emisi dari aktivitas kita adalah langkah nyata untuk mencegah pemanasan global.
+
+2. Bencana Alam
+Bencana hidrometeorologi seperti banjir, longsor, kekeringan, dan angin topan semakin sering terjadi akibat pemanasan global. Fenomena ini dipicu oleh gangguan pada atmosfer bumi akibat emisi gas rumah kaca seperti karbon dioksida. Jika tidak dikendalikan, intensitas dan frekuensi bencana akan terus meningkat di masa depan.
+
+3. Ketersediaan Air
+Emisi gas karbon dari aktivitas manusia memicu pemanasan global dan perubahan iklim, seperti kekeringan panjang atau hujan ekstrem yang menyebabkan banjir dan longsor. Jika terus dibiarkan, ketersediaan air bersih bisa terganggu. Dengan mengurangi emisi, kita turut menjaga ketahanan air bersih untuk masa depan.
+
+4. Isu Kesehatan
+Konsentrasi gas karbondioksida yang tinggi menyebabkan panas terperangkap di atmosfer karena menyerap radiasi matahari dari permukaan bumi. Akibatnya, suhu bumi meningkat dan udara terasa makin panas dari tahun ke tahun. Mengurangi emisi dari aktivitas kita adalah langkah nyata untuk mencegah pemanasan global.
+
+5. Warisan Positif untuk Generasi Mendatang
+Langkah-langkah kecil yang kamu lakukan hari ini, seperti mengurangi penggunaan kendaraan pribadi atau beralih ke energi terbarukan, adalah investasi untuk bumi yang lebih lestari bagi anak cucu kita.
+
+---
+## 6. Sektor Penyumbang Emisi CO₂ (kt)
+### Energi
+- Minyak & Gas Bumi: 14.846,26
+- Industri Batu Bara: 3.381,11
+
+### IPPU (Industri)
+- Lainnya: 153,93
+- Non-Energi: 4.552,61
+- Logam: 11.490,91
+- Kimia: 12.248,88
+- Mineral: 31.407,91
+
+### Pertanian
+- Budidaya Padi: 26.621,53
+- N₂O dari Tanah: 35.645,60
+- Urea: 5.642,59
+- Pengapuran: 2.140,45
+- Biomassa: 1.957,01
+- Ternak: 20.010,46
+
+### Kehutanan
+- Kebakaran Gambut: 86.154,02
+- Dekomposisi Gambut: 443.402,79
+- Biomassa: -232.544,40 (sink, serapan)
+
+### Limbah
+- Limbah Cair Industri: 65.522,09
+- Limbah Cair Domestik: 25.559,81
+- Pembakaran: 5.510,65
+- Pengolahan Biologis: 1,04
+- Limbah Padat: 39.702,69
+
+---
+
+## 7. Data Global Emisi Karbon (Sumber: Global Carbon Project 2023)
+- Total emisi global: **36,8 miliar ton CO₂** (2023).  
+- Negara penyumbang terbesar:
+  - China: 31%  
+  - Amerika Serikat: 14%  
+  - India: 7%  
+- Uni Eropa: ~7%  
+- Indonesia: ~2,3% dari total global (sekitar 733 juta ton).
+
+---
+
+## 8. Target Net Zero Indonesia (Sumber: KLHK, NDC Indonesia)
+- Komitmen: **Net Zero Emission 2060** atau lebih cepat.
+- Sektor energi → bebas batubara pada 2050.
+- Sektor kehutanan → menjadi *net sink* pada 2030 (serapan > emisi).
+- Target pengurangan emisi: **31,89%** dengan usaha sendiri, **43,20%** dengan dukungan internasional.
+
+---
+
+## 9. Teknologi & Inovasi untuk Mengurangi Emisi
+- **Carbon Capture and Storage (CCS):** menyimpan CO₂ di bawah tanah.  
+- **Energi terbarukan:** PLTS, PLTA, panas bumi, angin.  
+- **Pertanian regeneratif:** agroforestri, pemupukan organik.  
+- **Kendaraan listrik (EV):** transisi transportasi ramah lingkungan.  
+
+---
+
+## 10. Istilah Penting
+- **Net Zero:** kondisi emisi yang dilepas sama dengan emisi yang diserap.  
+- **Carbon Offset:** kompensasi emisi dengan kegiatan penghijauan atau kredit karbon.  
+- **Carbon Trading:** mekanisme jual-beli izin emisi karbon antar perusahaan/negara.  
+- **NDC (Nationally Determined Contribution):** target iklim tiap negara di bawah Perjanjian Paris.  
+
+---
+
+## 11. Inspirasi Global
+- **Norwegia:** mayoritas kendaraan listrik → 80% penjualan mobil baru adalah EV.  
+- **Jepang:** konsep *3R* (Reduce, Reuse, Recycle) diterapkan di sekolah & masyarakat.  
+- **Jerman:** lebih dari 50% listrik berasal dari energi terbarukan (2023).  
+- **Costa Rica:** hampir 100% listrik dari energi terbarukan (air, angin, panas bumi).  
+
+---
+
+## 12. Artikel Populer & Terbaru
+Artikel Populer
+- **Selasa, 26 November 2025**
+  📰 Butuh Dukungan Kolektif Turunkan Emisi Karbon  
+  Indonesia telah berhasil menurunkan emisi karbon bahan bakar fosil menjadi 733,2 juta ton pada 2023.  
+  🔗 https://indonesia.go.id/kategori/editorial/8789/butuh-dukungan-kolektif-turunkan-emisi-karbon?lang=1
+
+- **Jumat, 6 Juli 2025**
+  📰 Isu Emisi Karbon Tenggelam  
+  Target NDC Indonesia dalam Konferensi Para Pihak/Conference of the...  
+  🔗 https://lestari.kompas.com/read/2025/06/20/164909786/isu-emisi-karbon-tenggelam?page=all
+
+- **Kamis, 10 April 2025**
+  📰 Pentingnya Dekarbonisasi Angkutan Barang  
+  Upaya pengurangan emisi karbon dapat dimulai dari angkutan logistik. Peran...  
+  🔗 https://www.tempo.co/kolom/dekarbonisasi-transportasi-logistik-1229386
+
+- **Kamis, 5 Juni 2024**
+  📰 RI dan Inggris Perkuat Kolaborasi Transportasi Rendah Emisi  
+  Kementerian Perhubungan Republik...  
+  🔗 https://www.antaranews.com/berita/4879749/ri-dan-inggris-perkuat-kolaborasi-transportasi-rendah-emisi
+
+---
+
+Artikel Terbaru
+- **Rabu, 13 November 2024**
+  📰 Emisi Karbon Global Capai Rekor Tertinggi, RI Tunjukkan Tren Penurunan  
+  Global Carbon Budget melaporkan emisi karbon dari bahan bakar fosil diperkirakan mencapai rekor tertinggi pada 2024.  
+  🔗 https://www.antaranews.com/berita/4464445/emisi-karbon-global-capai-rekor-tertinggi-ri-tunjukkan-tren-penurunan
+
+- **Kamis, 15 Agustus 2024**
+  📰 Pengamat UGM: Target Nol Emisi Karbon di IKN Sulit Tercapai  
+  Pembangunan IKN dari awal didesain ramah lingkungan, namun pengamat menilai banyak faktor seperti kesiapan energi dan kendaraan bermotor berbahan bakar fosil membuat target nol emisi sulit tercapai.  
+  🔗 https://ugm.ac.id/id/berita/pengamat-ugm-target-nol-emisi-karbon-di-ikn-sulit-tercapai/
+
+- **Rabu, 06 Desember 2023**
+  📰 Indonesia Masuk 10 Besar Penghasil Emisi Karbon Dunia  
+  Laporan Global Carbon Project menyebut Indonesia jadi salah satu dari sepuluh negara penghasil karbon terbesar pada 2022, dengan kenaikan emisi tertinggi dibanding negara lain.  
+  🔗 https://betahita.id/news/detail/9605/indonesia-masuk-10-besar-penghasil-emisi-karbon-dunia.html?v=1701812357
+
+- **Senin, 24 Juni 2024**
+  📰 Siapkah Indonesia Mewujudkan Netralitas Karbon?  
+  Artikel membahas tantangan dan potensi Indonesia dalam mencapai netralitas karbon di masa depan.  
+  🔗 https://www.ums.ac.id/berita/teropong-jagat/siapkah-indonesia-mewujudkan-netralitas-karbon
+
+- **Sabtu, 28 Januari 2023**
+  📰 Transportasi Massal Solusi Tekan Emisi Karbon  
+  Sektor transportasi pribadi menyumbang emisi besar, solusi seperti angkutan umum & moda ramah lingkungan dapat membantu menekannya.  
+  🔗 https://otomotif.antaranews.com/berita/3369039/transportasi-massal-solusi-tekan-emisi-karbon
+
+- **Kamis, 16 Mei 2024**
+  📰 Analisis Pengungkapan Emisi Karbon Perusahaan Indonesia  
+  Kajian tentang bagaimana perusahaan di Indonesia melaporkan dan mengungkap emisi karbon yang mereka hasilkan.  
+  🔗 https://unair.ac.id/analisis-pengungkapan-emisi-karbon-perusahaan-indonesia/
+
+
+---
+
+## 13. Tips Mengurangi Emisi Karbon (Global & Lokal)
+1. 🚆 Gunakan transportasi umum/ramah lingkungan.  
+2. 💡 Hemat energi rumah tangga.  
+3. 🥦 Kurangi konsumsi daging/produk hewani.  
+4. 🔄 Kurangi sampah & lakukan daur ulang.  
+5. 🚰 Gunakan air secara bijak.  
+6. 🌳 Tanam pohon & tanaman hijau.  
+7. 📱 Digitalisasi dokumen untuk kurangi penggunaan kertas.  
+8. 🏠 Desain rumah hemat energi (ventilasi alami, panel surya).  
+
+---
+
+

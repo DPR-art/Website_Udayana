@@ -9,7 +9,7 @@ let messages = {
   history: [],
 };
 
-fetch('../public/business-info.txt')
+fetch('./../../public/Dokumentasi_Chatbot_Natura.txt')
   .then(response => {
     if (!response.ok) {
       throw new Error('Gagal memuat file');
@@ -66,10 +66,18 @@ async function sendMessage() {
     const result = await chat.sendMessageStream(userMessage);
 
     if (loader) loader.remove();
+    let fullText = "";
 
     for await (const chunk of result.stream) {
-      modelBubble.insertAdjacentText("beforeend", chunk.text());
+      fullText += chunk.text();
     }
+    fullText = fullText
+    .replace(/```[a-z]*\n?/gi, "")
+    .replace(/```/g, "")
+    .replace(/<!DOCTYPE[^>]*>/gi, "")
+    .replace(/<\/?(html|head|body|title)[^>]*>/gi, "");
+
+    modelBubble.insertAdjacentHTML("beforeend", fullText);
 
     messages.history.push({
       role: "user",
