@@ -1,7 +1,14 @@
-html, body{
+html{ 
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    font-family: "Poppins", sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     background-image: url(./../../image/game/MacBook\ Pro\ 16_\ -\ 6\ \(2\).png);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    position: relative;
 }

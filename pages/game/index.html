@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -18,52 +18,100 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
-  <body>
-  <header class="flex justify-between">
-    <a href="./../../index.html" class="flex items-center gap-2 pl-8 pt-4"><i class="fa-solid fa-arrow-left text-white font-semibold text-[18px]"></i><p class="text-white font-semibold text-[18px]">Kembali</p></a>
-    <a href="./../../index.html" class="flex items-center pr-8 pt-4 space-x-2">
-          <img class="h-10 mb-2" src="./../../image/Untitled-1-01.png" alt="">
-          <span class="text-lg sm:text-xl font-semibold text-white"
-            >Natura</span
-          >
-        </a>
+  <body>    
+    <header class="flex justify-between">
+      <a href="./../../index.html" class="flex items-center gap-2 pl-8 pt-4"
+        ><i
+          class="fa-solid fa-arrow-left text-white font-semibold text-[18px]"
+        ></i>
+        <p class="text-white font-semibold text-[18px]">Kembali</p></a
+      >
+      <a
+        href="./../../index.html"
+        class="flex items-center pr-8 pt-4 space-x-2"
+      >
+        <img class="h-10 mb-2" src="./../../image/Untitled-1-01.png" alt="" />
+        <span class="text-lg sm:text-xl font-semibold text-white">Natura</span>
+      </a>
     </header>
 
-  <section class="min-h-screen flex flex-col items-center justify-start pt-24 relative">
-    <img
-      src="./../../image/game/Untitled-2-01 1 (1).png"
-      class="absolute -bottom-12 -left-6 h-56 sm:h-72"
-      alt=""
-    />
-    <img
-      src="./../../image/game/Untitled-2-01 1 (1).png"
-      class="absolute -bottom-12 scale-x-[-1] -right-6 h-56 sm:h-72"
-      alt=""
-    />
-
-    <div
-      class="text-center items-center flex flex-col z-10 mb-6 max-w-sm sm:max-w-3xl"
+    <section
+      class="min-h-screen flex flex-col items-center justify-start pt-12 lg:pt-24 relative"
     >
-      <h1
-        class="text-6xl font-semibold mb-8 text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]"
+      <img
+        src="./../../image/game/Untitled-2-01 1 (1).png"
+        class="absolute -bottom-12 -left-6 h-56 sm:h-72"
+        alt=""
+      />
+      <img
+        src="./../../image/game/Untitled-2-01 1 (1).png"
+        class="absolute -bottom-12 scale-x-[-1] -right-6 h-56 sm:h-72"
+        alt=""
+      />
+
+      <div
+        class="text-center items-center flex flex-col z-10 mb-6 max-w-sm sm:max-w-3xl"
       >
-        Carbon Match
-      </h1>
-      <p
-        class="text-white font-semibold text-[26px] [text-shadow:0_4px_4px_rgba(0,0,0,0.25)] font-semibold"
-      >
-        Selamat datang di Carbon Match, Uji konsentrasi dan daya ingat Anda
-        melalui permainan kartu memori bertema emisi karbon. Cocokkan semua
-        pasangan kartu sebelum waktu habis
-      </p>
-      <a href="./game.html"
-        ><img
-          src="./../../image/game/Group 48095600.png"
-          class="w-64 mt-12 cursor-pointer hover:opacity-80 hover:scale-105 transition duration-300"
-          alt=""
-      /></a>
+        <h1
+          class="text-5xl lg:text-6xl font-semibold mb-8 text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]"
+        >
+          Carbon Match
+        </h1>
+        <p
+          class="text-white text-xl font-semibold lg:text-[26px] [text-shadow:0_4px_4px_rgba(0,0,0,0.25)] font-semibold"
+        >
+          Selamat datang di Carbon Match, Uji konsentrasi dan daya ingat Anda
+          melalui permainan kartu memori bertema emisi karbon. Cocokkan semua
+          pasangan kartu sebelum waktu habis
+        </p>
+        <a href="./game.html"
+          ><img
+            src="./../../image/game/Group 48095600.png"
+            class="w-52 lg:w-64 mt-12 cursor-pointer hover:opacity-80 hover:scale-105 transition duration-300"
+            alt=""
+        /></a>
+      </div>
+    </section>
+    <div
+      id="fullScreen"
+      onclick="goFullscreen()"
+      class="w-full absolute inset-0 z-50 h-full"
+    ></div>
+     <div
+      id="rotateNotice"
+      class="fixed inset-0 bg-black text-white flex items-center justify-center text-center text-xl hidden z-20"
+    >
+      Putar HP Anda <br />ke mode landscape 📱🔄
     </div>
-  </section>
+
+    <script>
+      function checkOrientation() {
+        if (window.innerHeight > window.innerWidth) {
+          document.getElementById("rotateNotice").classList.remove("hidden");
+        } else {
+          document.getElementById("rotateNotice").classList.add("hidden");
+        }
+      }
+
+      window.addEventListener("resize", checkOrientation);
+      window.addEventListener("orientationchange", checkOrientation);
+      checkOrientation();
+
+      function goFullscreen() {
+        let el = document.documentElement;
+        if (el.requestFullscreen) {
+          el.requestFullscreen();
+          document.getElementById("fullScreen").classList.add("hidden");
+        } else if (el.webkitRequestFullscreen) {
+          el.webkitRequestFullscreen();
+          document.getElementById("fullScreen").classList.add("hidden");
+        } else if (el.msRequestFullscreen) {
+          el.msRequestFullscreen();
+          document.getElementById("fullScreen").classList.add("hidden");
+        }
+      }
+    </script>
   </body>
 </html>

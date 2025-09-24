@@ -24,11 +24,11 @@ const winner = document.querySelector('.winner')
 const timerStop = document.getElementById('timer-stop')
 cardIcons.forEach(icon => {
   const card = document.createElement('div');
-  card.className = "bg-green-100 border border-[#55C500] rounded-lg h-16 w-16 sm:h-20 sm:w-20 flex items-center justify-center cursor-pointer select-none shadow-inner";
+  card.className = "bg-green-100 border border-[#55C500] rounded-lg h-16 w-16 lg:h-20 lg:w-20 flex items-center justify-center cursor-pointer select-none shadow-inner";
   card.dataset.icon = icon;
   card.innerHTML = `
-    <img src="./../../image/game/ask_.png" class="back h-12 sm:h-16">
-    <img src="${icon}" class="front h-12 w-12 sm:h-16 sm:w-16 hidden">
+    <img src="./../../image/game/ask_.png" class="back h-12 lg:h-16">
+    <img src="${icon}" class="front h-12 w-12 lg:h-16 lg:w-16 hidden">
   `;
 
 

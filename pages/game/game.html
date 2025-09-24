@@ -12,26 +12,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <section class="min-h-screen flex flex-col items-center justify-start relative">
-    <img src="./../../image/game/Untitled-2-01 1 (1).png" class="absolute -bottom-12 -left-6 h-56 sm:h-72" alt="">
-    <img src="./../../image/game/Untitled-2-01 1 (1).png" class="absolute -bottom-12 scale-x-[-1] -right-6 h-56 sm:h-72" alt="">
+  <body class="relative">
+    <section class="min-h-screen flex flex-col items-center pb-4 justify-start">
+      <img src="./../../image/game/Untitled-2-01 1 (1).png" class="absolute -bottom-12 -left-6 h-56 sm:h-72" alt="">
+      <img src="./../../image/game/Untitled-2-01 1 (1).png" class="absolute -bottom-12 scale-x-[-1] -right-6 h-56 sm:h-72" alt="">
 
-    <div class="text-center w-full mb-6 pt-20 sm:pt-8">
-      <h1 class="text-4xl font-semibold text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Carbon Match</h1>
-      <p class="text-white font-semibold mt-1 [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Siap tantangan hijau? Cocokkan gambar dan lawan jejak karbonmu!!</p>
-    </div>
+      <div class="text-center w-full mb-6 pt-20 sm:pt-8">
+        <h1 class="text-4xl font-semibold text-white [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Carbon Match</h1>
+        <p class="text-white font-semibold mt-1 [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Siap tantangan hijau? Cocokkan gambar dan lawan jejak karbonmu!!</p>
+      </div>
 
-    <div class="flex items-center justify-between w-1/2 mb-4">
-      <div class="text-white flex items-center font-semibold text-lg bg-green-700 px-4 h-8 rounded shadow" id="timer">05:00</div>
-      <a href="./index.html"><button class="bg-green-700 hover:bg-green-900 text-white px-4 h-8 rounded shadow">Kembali</button></a>
-    </div>
+      <div class="flex items-center justify-between w-1/2 mb-4">
+        <div class="text-white flex items-center font-semibold text-lg bg-green-700 px-4 h-8 rounded shadow" id="timer">05:00</div>
+        <a href="./index.html"><button class="bg-green-700 hover:bg-green-900 text-white px-4 h-8 rounded shadow">Kembali</button></a>
+      </div>
 
     <div class="grid grid-cols-5 z-10 gap-2 p-4 bg-white rounded-xl shadow-lg">
     </div>
 
     <div class="w-full backdrop-blur opacity-0 transition-duration-300 bg-white/50 -z-10 absolute flex justify-center items-center winner h-full">
-      <di class="h-48 w-[320px] sm:w-[360px] flex justify-center items-center bg-[#3BAD00] rounded-[30px]">
+      <div class="h-48 w-[320px] sm:w-[360px] flex justify-center items-center bg-[#3BAD00] rounded-[30px]">
         <img class="absolute h-36 sm:h-40 -translate-y-28 -translate-x-36 sm:-translate-x-44" src="./../../image/game/bot menang-01 1.png" alt="">
         <div class="bg-white text-center rounded-[30px] flex flex-col justify-center items-center h-[90%] w-full mx-2">
           <p class="text-xl text-[#339400] font-bold">Keren! Kamu Punya Ingatan Tajam!</p>
@@ -56,6 +56,45 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
+    <div
+      id="fullScreen"
+      onclick="goFullscreen()"
+      class="w-full absolute inset-0 z-50 h-full"
+    ></div>
+     <div
+      id="rotateNotice"
+      class="fixed inset-0 bg-black text-white flex items-center justify-center text-center text-xl hidden z-20"
+    >
+      Putar HP Anda <br />ke mode landscape 📱🔄
+    </div>
+
+    <script>
+      function checkOrientation() {
+        if (window.innerHeight > window.innerWidth) {
+          document.getElementById("rotateNotice").classList.remove("hidden");
+        } else {
+          document.getElementById("rotateNotice").classList.add("hidden");
+        }
+      }
+
+      window.addEventListener("resize", checkOrientation);
+      window.addEventListener("orientationchange", checkOrientation);
+      checkOrientation();
+
+      function goFullscreen() {
+        let el = document.documentElement;
+        if (el.requestFullscreen) {
+          el.requestFullscreen();
+          document.getElementById("fullScreen").classList.add("hidden");
+        } else if (el.webkitRequestFullscreen) {
+          el.webkitRequestFullscreen();
+          document.getElementById("fullScreen").classList.add("hidden");
+        } else if (el.msRequestFullscreen) {
+          el.msRequestFullscreen();
+          document.getElementById("fullScreen").classList.add("hidden");
+        }
+      }
+    </script>
   </body>
 </html>
