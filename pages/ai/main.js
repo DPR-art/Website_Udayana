@@ -1,30 +1,24 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyC79r4xFrJ4YkKKzzJK_Y7wY3nx0nSh0XI"
+const API_KEY = "AIzaSyDgW53fX5rKJf9BLqexBujGIABlW9cBShg";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
-
 let model;
-let messages = {
-  history: [],
-};
+let messages = { history: [] };
 
-fetch('./../../public/Dokumentasi_Chatbot_Natura.txt')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Gagal memuat file');
-    }
-    return response.text();
-  })
-  .then(text => {
+fetch("./../../public/Dokumentasi_Chatbot_Natura.txt")
+  .then(async (response) => {
+    if (!response.ok) throw new Error("Gagal memuat file");
+    const text = await response.text();
+
     model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+      model: "gemini-2.5-flash", // model yang valid
       systemInstruction: text,
     });
 
     console.log("✅ systemInstruction berhasil dimuat dari file.");
   })
-  .catch(error => {
+  .catch((error) => {
     console.error("❌ Gagal membaca file:", error);
   });
 
