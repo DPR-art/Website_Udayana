@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 let model;
 let messages = { history: [] };
 
-fetch("./../../public/Dokumentasi_Chatbot_Natura.txt")
+fetch("./../../document/Dokumentasi_Chatbot_Natura.txt")
   .then(async (response) => {
     if (!response.ok) throw new Error("Gagal memuat file");
     const text = await response.text();
