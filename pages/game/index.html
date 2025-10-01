@@ -94,6 +94,12 @@
           document.getElementById("rotateNotice").classList.remove("hidden");
         } else {
           document.getElementById("rotateNotice").classList.add("hidden");
+          const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+          if (isiOS) {
+            document.getElementById("fullScreen").classList.add("hidden");
+            return;
+          }
         }
       }
 
@@ -103,6 +109,7 @@
 
       function goFullscreen() {
         let el = document.documentElement;
+
         if (el.requestFullscreen) {
           el.requestFullscreen();
           document.getElementById("fullScreen").classList.add("hidden");

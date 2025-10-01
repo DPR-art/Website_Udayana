@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          rel="stylesheet"
+      />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -22,9 +26,12 @@
         <p class="text-white font-semibold mt-1 [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]">Siap tantangan hijau? Cocokkan gambar dan lawan jejak karbonmu!!</p>
       </div>
 
-      <div class="flex items-center justify-between w-1/2 mb-4">
+      <div class="flex px-2 lg:px-12 items-center justify-between w-1/2 mb-4">
+        <div class="flex gap-2">
+          <a href="./index.html"><button class="bg-green-700 hover:bg-green-900 text-white px-4 h-8 rounded shadow">Kembali</button></a>
+          <a href="./game.html"><button class="bg-green-700 hover:bg-green-900 text-white px-4 h-8 rounded shadow"><i class="ri-restart-line"></i> Ulangi</button></a>
+        </div>
         <div class="text-white flex items-center font-semibold text-lg bg-green-700 px-4 h-8 rounded shadow" id="timer">05:00</div>
-        <a href="./index.html"><button class="bg-green-700 hover:bg-green-900 text-white px-4 h-8 rounded shadow">Kembali</button></a>
       </div>
 
     <div class="grid grid-cols-5 z-10 gap-2 p-4 bg-white rounded-xl shadow-lg">
@@ -77,6 +84,12 @@
           document.getElementById("rotateNotice").classList.remove("hidden");
         } else {
           document.getElementById("rotateNotice").classList.add("hidden");
+          const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+          if (isiOS) {
+            document.getElementById("fullScreen").classList.add("hidden");
+            return;
+          }
         }
       }
 
