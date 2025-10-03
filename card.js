@@ -19,23 +19,19 @@ class VanillaCardsSwiper {
     }
     
     bindEvents() {
-        // Mouse events
         this.container.addEventListener('mousedown', this.handleStart.bind(this));
         document.addEventListener('mousemove', this.handleMove.bind(this));
         document.addEventListener('mouseup', this.handleEnd.bind(this));
         
-        // Touch events
         this.container.addEventListener('touchstart', this.handleStart.bind(this));
         document.addEventListener('touchmove', this.handleMove.bind(this));
         document.addEventListener('touchend', this.handleEnd.bind(this));
         
-        // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') this.prev();
             if (e.key === 'ArrowRight') this.next();
         });
         
-        // Prevent context menu on long press
         this.container.addEventListener('contextmenu', e => e.preventDefault());
     }
     
@@ -86,7 +82,6 @@ class VanillaCardsSwiper {
             activeCard.style.opacity = '';
         }
         
-        // Determine swipe direction
         const deltaX = Math.abs(this.currentX);
         const deltaY = Math.abs(this.currentY);
         
@@ -142,7 +137,6 @@ class VanillaCardsSwiper {
     }
 }
 
-// Initialize the swiper
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.card-container');
     new VanillaCardsSwiper(container);

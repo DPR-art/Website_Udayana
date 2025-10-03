@@ -12,7 +12,7 @@ fetch("./../../document/Dokumentasi_Chatbot_Natura.txt")
     const text = await response.text();
 
     model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash", // model yang valid
+      model: "gemini-2.5-flash",
       systemInstruction: text,
     });
 
