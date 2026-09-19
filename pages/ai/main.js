@@ -1,29 +1,14 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-
-const API_KEY = "AIzaSyDgW53fX5rKJf9BLqexBujGIABlW9cBShg";
-const genAI = new GoogleGenerativeAI(API_KEY);
-
-let model;
 let messages = { history: [] };
 
-fetch("./../../document/Dokumentasi_Chatbot_Natura.txt")
-  .then(async (response) => {
-    if (!response.ok) throw new Error("Gagal memuat file");
-    const text = await response.text();
-
-    model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
-      systemInstruction: text,
-    });
-
-    console.log("✅ systemInstruction berhasil dimuat dari file.");
-  })
-  .catch((error) => {
-    console.error("❌ Gagal membaca file:", error);
-  });
+function cleanOutput(text) {
+  return text
+    .replace(/```[a-z]*\n?/gi, "")
+    .replace(/```/g, "")
+    .replace(/<!DOCTYPE[^>]*>/gi, "")
+    .replace(/<\/?(html|head|body|title)[^>]*>/gi, "");
+}
 
 async function sendMessage() {
-  console.log(messages);
   const input = document.querySelector(".chat-window input");
   const chatContainer = document.querySelector(".chat-window .chat");
   const title = document.querySelector(".chat-window .title");
@@ -56,22 +41,29 @@ async function sendMessage() {
     const modelBubble = chatContainer.querySelector(".chat-window .model p");
     const loader = modelBubble.querySelector(".loader");
 
-    const chat = model.startChat(messages);
-    const result = await chat.sendMessageStream(userMessage);
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: userMessage, history: messages.history }),
+    });
+
+    if (!response.ok || !response.body) throw new Error("Gagal menghubungi server");
 
     if (loader) loader.remove();
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
     let fullText = "";
 
-    for await (const chunk of result.stream) {
-      fullText += chunk.text();
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      fullText += decoder.decode(value, { stream: true });
+      modelBubble.innerHTML = cleanOutput(fullText);
     }
-    fullText = fullText
-    .replace(/```[a-z]*\n?/gi, "")
-    .replace(/```/g, "")
-    .replace(/<!DOCTYPE[^>]*>/gi, "")
-    .replace(/<\/?(html|head|body|title)[^>]*>/gi, "");
 
-    modelBubble.insertAdjacentHTML("beforeend", fullText);
+    fullText = cleanOutput(fullText);
+    modelBubble.innerHTML = fullText;
 
     messages.history.push({
       role: "user",
@@ -80,14 +72,14 @@ async function sendMessage() {
 
     messages.history.push({
       role: "model",
-      parts: [{ text: modelBubble.innerHTML }],
+      parts: [{ text: fullText }],
     });
 
   } catch (error) {
     console.error("Gagal kirim pesan:", error);
-    const loader = document.querySelector(".chat-window .model");
-    
-    if (typeof loader !== "undefined" && loader) loader.remove();
+    const modelWrapper = document.querySelector(".chat-window .model");
+
+    if (modelWrapper) modelWrapper.remove();
 
     chatContainer.insertAdjacentHTML("afterbegin", `
       <div class="error">
@@ -96,8 +88,6 @@ async function sendMessage() {
     `);
   }
 }
-
-
 
 document.querySelector(".chat-window .input-area button")
 .addEventListener("click", ()=>sendMessage());
